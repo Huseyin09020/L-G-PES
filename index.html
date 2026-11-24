@@ -8,7 +8,7 @@
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Google Fonts: Outfit (Headings & Scores) & Plus Jakarta Sans (UI Text) -->
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -24,11 +24,11 @@
           colors: {
             midnight: '#0f172a',
             aquaMint: '#2dd4bf',
-            iceBlue: '#38bdf8',
-            lavenderSoft: '#a78bfa',
-            leaguePurple: '#7c3aed',
+            iceBlue: '#bae6fd',
+            lavenderSoft: '#ddd6fe',
+            leaguePurple: '#a855f7',
             leagueOrange: '#f97316',
-            rgbRed: '#ff0055',
+            rgbRed: '#ff1e42',
           }
         }
       }
@@ -40,7 +40,7 @@
     body {
       font-family: 'Plus Jakarta Sans', sans-serif;
       color: #0f172a;
-      background: linear-gradient(135deg, #effdf9 0%, #eef7ff 50%, #f5f2ff 100%);
+      background: linear-gradient(135deg, #ecfdf5 0%, #eff6ff 50%, #f5f3ff 100%);
       min-height: 100vh;
       overflow-x: hidden;
       position: relative;
@@ -50,7 +50,7 @@
       font-family: 'Outfit', sans-serif;
     }
 
-    /* Animated Pastel Mesh Blobs (Su Yeşili, Buz Mavisi, Lavanta, Şeftali) */
+    /* Animated Pastel Background Mesh (Su Yeşili, Buz Mavisi, Yumuşak Lavanta) */
     .ambient-canvas {
       position: fixed;
       inset: 0;
@@ -62,41 +62,41 @@
     .blob {
       position: absolute;
       border-radius: 9999px;
-      filter: blur(82px);
-      opacity: 0.72;
+      filter: blur(80px);
+      opacity: 0.78;
       animation: floatBlob 20s infinite ease-in-out alternate;
       will-change: transform;
     }
 
     .blob-1 {
-      width: 48vw;
-      height: 48vw;
-      max-width: 650px;
-      max-height: 650px;
-      background: radial-gradient(circle, #6ee7b7 0%, #2dd4bf 55%, transparent 100%);
+      width: 50vw;
+      height: 50vw;
+      max-width: 680px;
+      max-height: 680px;
+      background: radial-gradient(circle, #a7f3d0 0%, #2dd4bf 55%, transparent 100%);
       top: -12%;
       left: -8%;
       animation-duration: 18s;
     }
 
     .blob-2 {
-      width: 46vw;
-      height: 46vw;
-      max-width: 620px;
-      max-height: 620px;
-      background: radial-gradient(circle, #7dd3fc 0%, #38bdf8 55%, transparent 100%);
-      top: 8%;
+      width: 48vw;
+      height: 48vw;
+      max-width: 640px;
+      max-height: 640px;
+      background: radial-gradient(circle, #bae6fd 0%, #38bdf8 55%, transparent 100%);
+      top: 6%;
       right: -10%;
       animation-duration: 22s;
       animation-delay: -5s;
     }
 
     .blob-3 {
-      width: 44vw;
-      height: 44vw;
-      max-width: 580px;
-      max-height: 580px;
-      background: radial-gradient(circle, #c4b5fd 0%, #a78bfa 55%, transparent 100%);
+      width: 46vw;
+      height: 46vw;
+      max-width: 600px;
+      max-height: 600px;
+      background: radial-gradient(circle, #ddd6fe 0%, #a855f7 50%, transparent 100%);
       bottom: -14%;
       left: 16%;
       animation-duration: 19s;
@@ -104,52 +104,52 @@
     }
 
     .blob-4 {
-      width: 32vw;
-      height: 32vw;
-      max-width: 420px;
-      max-height: 420px;
-      background: radial-gradient(circle, #fed7aa 0%, #fecdd3 60%, transparent 100%);
-      bottom: 6%;
-      right: 8%;
-      opacity: 0.54;
+      width: 34vw;
+      height: 34vw;
+      max-width: 440px;
+      max-height: 440px;
+      background: radial-gradient(circle, #fed7aa 0%, #a7f3d0 65%, transparent 100%);
+      bottom: 5%;
+      right: 6%;
+      opacity: 0.56;
       animation-duration: 24s;
       animation-delay: -3s;
     }
 
     @keyframes floatBlob {
       0% { transform: translate(0px, 0px) scale(1); }
-      50% { transform: translate(36px, -26px) scale(1.06); }
-      100% { transform: translate(-26px, 30px) scale(0.95); }
+      50% { transform: translate(34px, -24px) scale(1.06); }
+      100% { transform: translate(-24px, 28px) scale(0.95); }
     }
 
     /* Frosted Translucent Glassmorphism System */
     .glass-panel {
-      background: rgba(255, 255, 255, 0.64);
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
-      border: 1px solid rgba(255, 255, 255, 0.86);
+      background: rgba(255, 255, 255, 0.65);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.88);
       box-shadow: 0 8px 32px rgba(15, 23, 42, 0.055);
     }
 
     .glass-card-hover {
-      background: rgba(255, 255, 255, 0.66);
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
-      border: 1px solid rgba(255, 255, 255, 0.88);
+      background: rgba(255, 255, 255, 0.68);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.9);
       box-shadow: 0 8px 28px rgba(15, 23, 42, 0.045);
       transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1);
     }
 
     .glass-card-hover:hover {
-      background: rgba(255, 255, 255, 0.88);
+      background: rgba(255, 255, 255, 0.9);
       transform: translateY(-3px);
-      border-color: rgba(124, 58, 237, 0.35);
-      box-shadow: 0 16px 36px -8px rgba(124, 58, 237, 0.14), 0 6px 16px -4px rgba(56, 189, 248, 0.12);
+      border-color: rgba(168, 85, 247, 0.38);
+      box-shadow: 0 16px 36px -8px rgba(168, 85, 247, 0.14), 0 6px 16px -4px rgba(45, 212, 191, 0.14);
     }
 
     .glass-input {
-      background: rgba(255, 255, 255, 0.82);
-      border: 1px solid rgba(148, 163, 184, 0.38);
+      background: rgba(255, 255, 255, 0.85);
+      border: 1px solid rgba(148, 163, 184, 0.4);
       backdrop-filter: blur(10px);
       transition: all 0.2s ease;
     }
@@ -157,42 +157,41 @@
     .glass-input:focus {
       outline: none;
       background: rgba(255, 255, 255, 0.98);
-      border-color: #7c3aed;
-      box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.16);
+      border-color: #a855f7;
+      box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.16);
     }
 
     .glass-modal-backdrop {
-      background: rgba(15, 23, 42, 0.42);
+      background: rgba(15, 23, 42, 0.44);
       backdrop-filter: blur(9px);
       -webkit-backdrop-filter: blur(9px);
     }
 
     .glass-modal {
-      background: rgba(255, 255, 255, 0.92);
-      backdrop-filter: blur(24px);
-      -webkit-backdrop-filter: blur(24px);
-      border: 1px solid rgba(255, 255, 255, 0.96);
+      background: rgba(255, 255, 255, 0.93);
+      backdrop-filter: blur(22px);
+      -webkit-backdrop-filter: blur(22px);
+      border: 1px solid rgba(255, 255, 255, 0.98);
       box-shadow: 0 25px 60px -12px rgba(15, 23, 42, 0.26);
     }
 
-    /* Animated RGB Gradient Glowing Logo ("LİGİPES") */
+    /* Animated RGB Logo Text (#a855f7 Mor, #f97316 Turuncu, #0f172a Gece Mavisi, #ff1e42 RGB Kırmızısı) */
     .rgb-logo-text {
       font-family: 'Outfit', sans-serif;
       background: linear-gradient(
         90deg,
-        #7c3aed 0%,
-        #ff0055 22%,
-        #f97316 45%,
-        #00e5ff 68%,
-        #1e293b 84%,
-        #7c3aed 100%
+        #a855f7 0%,
+        #ff1e42 25%,
+        #f97316 50%,
+        #0f172a 75%,
+        #a855f7 100%
       );
       background-size: 300% auto;
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      animation: rgbSpectrumFlow 4.5s linear infinite;
-      filter: drop-shadow(0 2px 14px rgba(124, 58, 237, 0.24));
+      animation: rgbSpectrumFlow 4.2s linear infinite;
+      filter: drop-shadow(0 2px 12px rgba(168, 85, 247, 0.22));
     }
 
     .rgb-border-glow {
@@ -204,9 +203,9 @@
       inset: -1.5px;
       border-radius: inherit;
       padding: 1.5px;
-      background: linear-gradient(90deg, #ff0055, #f97316, #00e5ff, #7c3aed, #ff0055);
+      background: linear-gradient(90deg, #ff1e42, #f97316, #a855f7, #0f172a, #ff1e42);
       background-size: 300% auto;
-      animation: rgbSpectrumFlow 4.5s linear infinite;
+      animation: rgbSpectrumFlow 4.2s linear infinite;
       -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
       -webkit-mask-composite: xor;
       mask-composite: exclude;
@@ -226,7 +225,6 @@
       animation: modalPop 0.24s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     }
 
-    /* Error Shake Animation for Wrong Moderator Credentials */
     @keyframes shakeError {
       0%, 100% { transform: translateX(0); }
       20%, 60% { transform: translateX(-7px); }
@@ -250,7 +248,7 @@
       border-radius: 999px;
     }
     ::-webkit-scrollbar-thumb:hover {
-      background: rgba(124, 58, 237, 0.45);
+      background: rgba(168, 85, 247, 0.45);
     }
   </style>
 </head>
@@ -276,7 +274,7 @@
     <!-- ========================================================= -->
     <!-- STICKY HEADER                                             -->
     <!-- ========================================================= -->
-    <header class="glass-panel rounded-3xl px-4 sm:px-7 py-3.5 sm:py-4 flex flex-wrap items-center justify-between gap-4 sticky top-3 z-30">
+    <header class="glass-panel rounded-3xl px-4 sm:px-7 py-3.5 sm:py-4 flex flex-wrap items-center justify-between gap-3.5 sticky top-3 z-30">
       <!-- Brand Logo -->
       <div class="flex items-center gap-3.5">
         <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-slate-900 flex items-center justify-center shadow-md rgb-border-glow shrink-0">
@@ -286,33 +284,53 @@
             <path d="M12 2.5V7.4M21 9.5L16.1 10.4M17.5 19.8L14.5 15.2M6.5 19.8L9.5 15.2M3 9.5L7.9 10.4" stroke="url(#ligipesBallGrad)" stroke-width="1.6"/>
             <defs>
               <linearGradient id="ligipesBallGrad" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#ff0055"/>
+                <stop stop-color="#ff1e42"/>
                 <stop offset="0.35" stop-color="#f97316"/>
-                <stop offset="0.7" stop-color="#00e5ff"/>
-                <stop offset="1" stop-color="#7c3aed"/>
+                <stop offset="0.7" stop-color="#a855f7"/>
+                <stop offset="1" stop-color="#2dd4bf"/>
               </linearGradient>
             </defs>
           </svg>
         </div>
         <div>
-          <div class="flex items-center gap-2">
+          <div class="flex flex-wrap items-center gap-2">
             <h1 class="rgb-logo-text text-2xl sm:text-3xl font-black tracking-wider leading-none select-none">LİGİPES</h1>
             <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-extrabold bg-teal-500/15 text-teal-900 border border-teal-400/40">
               eFootball Ligi
+            </span>
+            <span id="cloud-status-pill" class="hidden inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-extrabold bg-sky-500/15 text-sky-900 border border-sky-400/40">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span id="cloud-status-text">Canlı Bulut</span>
             </span>
           </div>
           <p class="text-xs sm:text-sm text-slate-600 font-medium mt-0.5">Arkadaş Ligi • Canlı Puan, Fikstür, H2H & İstatistik Merkezi</p>
         </div>
       </div>
 
-      <!-- Right Controls: Role Status + Auth Button -->
-      <div class="flex flex-wrap items-center gap-2 sm:gap-2.5 ml-auto sm:ml-0">
-        <div id="role-badge" class="flex items-center gap-2 px-3.5 py-2 rounded-2xl text-xs sm:text-sm font-semibold bg-white/80 border border-slate-200/80 text-slate-700 shadow-2xs">
+      <!-- Right Controls: Refresh + Share Link + Role Badge + Auth Button -->
+      <div class="flex flex-wrap items-center gap-2 ml-auto lg:ml-0">
+        <!-- Manual Sync / Refresh Button -->
+        <button type="button" onclick="handleManualRefresh()" title="Güncel verileri kontrol et ve yenile" class="px-3 py-2 rounded-2xl text-xs font-extrabold bg-white/85 hover:bg-white border border-slate-200/90 text-slate-800 shadow-2xs transition-all flex items-center gap-1.5 cursor-pointer active:scale-95">
+          <svg id="refresh-icon-svg" class="w-4 h-4 text-teal-700 transition-transform duration-500" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+          </svg>
+          <span class="hidden sm:inline">Yenile</span>
+        </button>
+
+        <!-- Instant Share Link Button (WhatsApp / Cross-Device) -->
+        <button type="button" onclick="shareLeagueLinkToClipboard()" class="px-3.5 py-2 rounded-2xl text-xs font-extrabold text-emerald-950 bg-emerald-400/25 hover:bg-emerald-400/40 border border-emerald-400/60 shadow-2xs transition-all flex items-center gap-1.5 cursor-pointer active:scale-95">
+          <span>📲</span>
+          <span>Güncel Linki Paylaş (WhatsApp)</span>
+        </button>
+
+        <!-- Role Status Pill -->
+        <div id="role-badge" class="flex items-center gap-2 px-3 py-2 rounded-2xl text-xs font-semibold bg-white/80 border border-slate-200/80 text-slate-700 shadow-2xs">
           <span class="w-2 h-2 rounded-full bg-teal-500 animate-pulse"></span>
-          <span>Misafir Görünümü</span>
+          <span>Misafir</span>
         </div>
 
-        <button id="auth-action-btn" onclick="handleAuthButtonClick()" class="px-4 py-2.5 rounded-2xl text-xs sm:text-sm font-bold text-white bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 hover:from-purple-700 hover:to-orange-600 shadow-md hover:shadow-lg transition-all duration-200 flex items-center gap-2 cursor-pointer active:scale-95">
+        <!-- Auth Action Button -->
+        <button id="auth-action-btn" onclick="handleAuthButtonClick()" class="px-3.5 py-2 rounded-2xl text-xs font-bold text-white bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 hover:from-purple-700 hover:to-orange-600 shadow-md hover:shadow-lg transition-all duration-200 flex items-center gap-1.5 cursor-pointer active:scale-95">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z"/>
           </svg>
@@ -324,12 +342,12 @@
     <!-- ========================================================= -->
     <!-- MODERATOR CONTROL BAR (Visible Only When Logged In)       -->
     <!-- ========================================================= -->
-    <section id="mod-control-bar" class="hidden glass-panel rounded-3xl p-3.5 sm:px-6 border-2 border-purple-400/45 bg-gradient-to-r from-purple-500/10 via-white/75 to-orange-500/10 flex flex-wrap items-center justify-between gap-3">
+    <section id="mod-control-bar" class="hidden glass-panel rounded-3xl p-3.5 sm:px-6 border-2 border-purple-400/45 bg-gradient-to-r from-purple-500/10 via-white/80 to-orange-500/10 flex flex-wrap items-center justify-between gap-3">
       <div class="flex items-center gap-2.5">
         <span class="w-8 h-8 rounded-xl bg-purple-600 text-white flex items-center justify-center text-sm font-bold shadow-xs">🛡️</span>
         <div>
           <div class="text-xs sm:text-sm font-extrabold text-slate-900">Moderatör Kontrol Paneli</div>
-          <div class="text-[11px] font-medium text-slate-600">Maç skoru gir, oyuncu & kulüp yönet, fikstür oluştur veya yedek al.</div>
+          <div class="text-[11px] font-medium text-slate-600">Oyuncu ekle, maç skoru gir, bulut eşitle veya arkadaşlarına güncel linki paylaş.</div>
         </div>
       </div>
 
@@ -343,8 +361,11 @@
         <button type="button" onclick="openFixtureQuickAction()" class="px-3.5 py-2 rounded-xl text-xs font-extrabold text-teal-950 bg-teal-400/25 hover:bg-teal-400/40 border border-teal-400/50 cursor-pointer">
           🗓️ Fikstür Oluştur
         </button>
-        <button type="button" onclick="switchMainTab('admin')" class="px-3.5 py-2 rounded-xl text-xs font-extrabold text-purple-900 bg-purple-500/15 hover:bg-purple-500/25 border border-purple-300/60 cursor-pointer">
-          💾 Yedekle / Yükle (JSON)
+        <button type="button" onclick="openCloudSyncModal()" class="px-3.5 py-2 rounded-xl text-xs font-extrabold text-sky-950 bg-sky-400/25 hover:bg-sky-400/40 border border-sky-400/60 cursor-pointer">
+          ☁️ Bulut Senkronizasyonu
+        </button>
+        <button type="button" onclick="shareLeagueLinkToClipboard()" class="px-3.5 py-2 rounded-xl text-xs font-extrabold text-emerald-950 bg-emerald-400/25 hover:bg-emerald-400/40 border border-emerald-400/60 cursor-pointer">
+          📲 Güncel Linki Paylaş
         </button>
       </div>
     </section>
@@ -383,7 +404,7 @@
               👑 Lider
             </span>
             <h2 id="card-leader-name" class="text-lg sm:text-xl font-extrabold text-slate-900 truncate pt-0.5">-</h2>
-            <p id="card-leader-sub" class="text-xs font-medium text-slate-600 truncate">0 Puan • 0 Maç</p>
+            <p id="card-leader-sub" class="text-xs font-medium text-slate-600 truncate">Henüz veri yok</p>
           </div>
           <div class="w-11 h-11 rounded-2xl bg-purple-500/15 border border-purple-300/40 flex items-center justify-center text-xl shrink-0">👑</div>
         </div>
@@ -394,7 +415,7 @@
               🔥 Gol Makinesi
             </span>
             <h2 id="card-topattack-name" class="text-lg sm:text-xl font-extrabold text-slate-900 truncate pt-0.5">-</h2>
-            <p id="card-topattack-sub" class="text-xs font-medium text-slate-600 truncate">0 Atılan Gol</p>
+            <p id="card-topattack-sub" class="text-xs font-medium text-slate-600 truncate">Henüz veri yok</p>
           </div>
           <div class="w-11 h-11 rounded-2xl bg-orange-500/15 border border-orange-300/40 flex items-center justify-center text-xl shrink-0">🔥</div>
         </div>
@@ -405,7 +426,7 @@
               🛡️ Çelik Duvar
             </span>
             <h2 id="card-defense-name" class="text-lg sm:text-xl font-extrabold text-slate-900 truncate pt-0.5">-</h2>
-            <p id="card-defense-sub" class="text-xs font-medium text-slate-600 truncate">0 Yenilen Gol</p>
+            <p id="card-defense-sub" class="text-xs font-medium text-slate-600 truncate">Henüz veri yok</p>
           </div>
           <div class="w-11 h-11 rounded-2xl bg-teal-500/20 border border-teal-300/50 flex items-center justify-center text-xl shrink-0">🛡️</div>
         </div>
@@ -416,7 +437,7 @@
               🟥 Kasap
             </span>
             <h2 id="card-butcher-name" class="text-lg sm:text-xl font-extrabold text-slate-900 truncate pt-0.5">-</h2>
-            <p id="card-butcher-sub" class="text-xs font-medium text-slate-600 truncate">0 Toplam Kart</p>
+            <p id="card-butcher-sub" class="text-xs font-medium text-slate-600 truncate">Henüz veri yok</p>
           </div>
           <div class="w-11 h-11 rounded-2xl bg-rose-500/15 border border-rose-300/40 flex items-center justify-center text-xl shrink-0">🟥</div>
         </div>
@@ -495,7 +516,7 @@
     <!-- VIEW 2: MAÇLAR & FİKSTÜR                                  -->
     <!-- ========================================================= -->
     <section id="view-matches" class="hidden space-y-5">
-      <!-- Top Filter Bar: Tümü / Oynananlar / Bekleyen Fikstür + Player Filter -->
+      <!-- Top Filter Bar -->
       <div class="glass-panel rounded-3xl p-4 sm:p-5 flex flex-col lg:flex-row lg:items-center justify-between gap-4">
         <div class="flex flex-wrap items-center gap-1.5 bg-white/65 p-1.5 rounded-2xl border border-white/85 self-start">
           <button type="button" onclick="switchMatchFilterMode('all')" id="filter-mode-all" class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-extrabold bg-slate-900 text-white shadow-xs transition-all cursor-pointer">
@@ -573,7 +594,7 @@
           <p class="text-xs sm:text-sm text-slate-600">İki arkadaş seçin, aralarındaki tüm maçların galibiyet oranlarını ve ortalamalarını inceleyin.</p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-11 gap-3 items-center max-w-3xl mx-auto">
+        <div id="h2h-selector-bar" class="grid grid-cols-1 sm:grid-cols-11 gap-3 items-center max-w-3xl mx-auto">
           <div class="sm:col-span-5">
             <label for="h2h-player-a" class="block text-[11px] font-extrabold uppercase tracking-wider text-purple-800 mb-1">1. Oyuncu</label>
             <select id="h2h-player-a" onchange="renderH2HSection()" class="glass-input w-full rounded-2xl px-4 py-3 text-sm font-extrabold text-slate-900 cursor-pointer"></select>
@@ -601,7 +622,7 @@
         <div id="league-records-grid" class="grid grid-cols-1 md:grid-cols-3 gap-4"></div>
       </div>
 
-      <!-- 4 Leaderboards Grid: Gol Krallığı, Asist Krallığı, Maçın Adamı (MVP), Kart Raporu -->
+      <!-- 4 Leaderboards Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5">
         <!-- Gol Krallığı -->
         <div class="glass-panel rounded-3xl overflow-hidden flex flex-col">
@@ -639,7 +660,7 @@
           <div id="leaderboard-mvp" class="p-4 space-y-2.5 flex-1"></div>
         </div>
 
-        <!-- Kart Raporu / Fair-Play -->
+        <!-- Kart Raporu -->
         <div class="glass-panel rounded-3xl overflow-hidden flex flex-col">
           <div class="px-5 py-4 border-b border-white/80 flex items-center justify-between bg-rose-500/5">
             <div>
@@ -660,8 +681,8 @@
       <div class="glass-panel rounded-3xl p-5 sm:p-6 space-y-6 border-2 border-purple-400/40">
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-200/80 pb-4">
           <div>
-            <h2 class="text-lg sm:text-xl font-extrabold text-slate-900">⚙️ Lig Yönetimi & Veri Yedekleme</h2>
-            <p class="text-xs sm:text-sm text-slate-600">Oyuncu ve varsayılan eFootball kulübü ekle/çıkar, lig verilerini JSON olarak yedekle.</p>
+            <h2 class="text-lg sm:text-xl font-extrabold text-slate-900">⚙️ Lig Yönetimi, Paylaşım & Yedekleme</h2>
+            <p class="text-xs sm:text-sm text-slate-600">Oyuncu ve varsayılan eFootball kulübü ekle/çıkar, bulut eşitlemesi yap veya JSON yedeği al.</p>
           </div>
           <button type="button" onclick="openMatchFormModal()" class="px-4 py-2.5 rounded-2xl text-xs sm:text-sm font-extrabold text-white bg-gradient-to-r from-purple-600 to-orange-500 shadow-md cursor-pointer">
             ⚽ Yeni Maç & İstatistik Gir
@@ -672,8 +693,8 @@
         <div class="space-y-3">
           <h3 class="text-base font-extrabold text-slate-900">👥 Oyuncu & Varsayılan Kulüp Yönetimi</h3>
           <form onsubmit="handleAddPlayer(event)" class="grid grid-cols-1 sm:grid-cols-12 gap-3 max-w-2xl">
-            <input type="text" id="admin-new-player-name" placeholder="Oyuncu adı (Örn: Kerem)" required maxlength="22" class="sm:col-span-5 glass-input rounded-2xl px-4 py-2.5 text-sm font-bold text-slate-900" />
-            <input type="text" id="admin-new-player-club" placeholder="eFootball Kulübü (Örn: Fenerbahçe)" maxlength="26" class="sm:col-span-4 glass-input rounded-2xl px-4 py-2.5 text-sm font-semibold text-slate-800" />
+            <input type="text" id="admin-new-player-name" placeholder="Arkadaşının adı" required maxlength="22" class="sm:col-span-5 glass-input rounded-2xl px-4 py-2.5 text-sm font-bold text-slate-900" />
+            <input type="text" id="admin-new-player-club" placeholder="eFootball Kulübü (İsteğe bağlı)" maxlength="26" class="sm:col-span-4 glass-input rounded-2xl px-4 py-2.5 text-sm font-semibold text-slate-800" />
             <button type="submit" class="sm:col-span-3 px-4 py-2.5 rounded-2xl text-sm font-extrabold text-white bg-teal-600 hover:bg-teal-700 shadow-sm transition-all cursor-pointer">
               + Oyuncu Ekle
             </button>
@@ -681,9 +702,17 @@
           <div id="admin-players-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 pt-2"></div>
         </div>
 
-        <!-- Backup & Season Reset Cards -->
+        <!-- Cloud Sync, JSON Backup & Season Reset Cards -->
         <div class="border-t border-slate-200/80 pt-5 grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div class="p-4 rounded-2xl bg-white/80 border border-white space-y-2.5">
+          <div class="p-4 rounded-2xl bg-white/85 border border-white space-y-2.5">
+            <h4 class="text-sm font-extrabold text-slate-900">☁️ Canlı Bulut Senkronizasyonu</h4>
+            <p class="text-xs text-slate-600">Firebase Realtime Database bağlayarak PC'de girdiğin skorların arkadaşlarının telefonunda otomatik güncellenmesini sağla.</p>
+            <button type="button" onclick="openCloudSyncModal()" class="w-full py-2.5 px-3 rounded-xl text-xs font-extrabold bg-sky-600 text-white hover:bg-sky-700 transition-colors cursor-pointer">
+              ☁️ Bulut Ayarlarını Aç
+            </button>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-white/85 border border-white space-y-2.5">
             <h4 class="text-sm font-extrabold text-slate-900">💾 JSON Yedekle / Geri Yükle</h4>
             <p class="text-xs text-slate-600">Sezon verilerini cihazına JSON dosyası olarak kaydet veya başka bir cihazdan geri yükle.</p>
             <div class="flex gap-2 pt-1">
@@ -697,15 +726,7 @@
             </div>
           </div>
 
-          <div class="p-4 rounded-2xl bg-white/80 border border-white space-y-2.5">
-            <h4 class="text-sm font-extrabold text-slate-900">🔄 Örnek Sezonu Yükle</h4>
-            <p class="text-xs text-slate-600">Hüseyin, Arda, Emirhan, Doğan, Samet ve Yusuf'un başlangıç sezon verilerini geri yükler.</p>
-            <button type="button" onclick="resetToDemoData()" class="w-full py-2.5 px-3 rounded-xl text-xs font-extrabold bg-teal-500/15 text-teal-900 hover:bg-teal-500/25 border border-teal-300 transition-colors cursor-pointer">
-              Örnek Verilere Sıfırla
-            </button>
-          </div>
-
-          <div class="p-4 rounded-2xl bg-white/80 border border-white space-y-2.5">
+          <div class="p-4 rounded-2xl bg-white/85 border border-white space-y-2.5">
             <h4 class="text-sm font-extrabold text-slate-900">🧹 Sezonu Sıfırla (Temiz Başlangıç)</h4>
             <p class="text-xs text-slate-600">Oyuncuları korur, oynanan tüm maçları ve bekleyen fikstürü sıfırlayarak yeni sezon başlatır.</p>
             <button type="button" id="admin-reset-season-btn" onclick="handleResetSeason()" class="w-full py-2.5 px-3 rounded-xl text-xs font-extrabold bg-rose-500/15 text-rose-800 hover:bg-rose-500/25 border border-rose-300 transition-colors cursor-pointer">
@@ -718,7 +739,7 @@
 
     <!-- Footer -->
     <footer class="text-center py-4 text-xs font-medium text-slate-500">
-      <span class="rgb-logo-text font-black text-sm">LİGİPES</span> • Arkadaşlarla eFootball Ligi • Tüm veriler tarayıcında otomatik kaydedilir.
+      <span class="rgb-logo-text font-black text-sm">LİGİPES</span> • Arkadaşlarla eFootball Ligi • PC & Telefon Senkronizasyon Destekli
     </footer>
 
   </div>
@@ -737,25 +758,24 @@
           🔐
         </div>
         <h3 class="text-xl font-extrabold text-slate-900 pt-2">Moderatör Girişi</h3>
-        <p class="text-xs sm:text-sm text-slate-600">Lig yönetimi ve maç kaydı işlemleri için yetkili hesabınızla giriş yapın.</p>
+        <p class="text-xs sm:text-sm text-slate-600">Yetkili hesabınızla giriş yapın.</p>
       </div>
 
       <div id="login-error-box" class="hidden p-3 rounded-2xl bg-rose-500/15 border border-rose-400/50 text-rose-800 text-xs font-bold text-center">
-        Kullanıcı adı veya şifre hatalı! Lütfen tekrar deneyin.
+        Kullanıcı adı veya şifre hatalı!
       </div>
 
       <form onsubmit="handleLoginSubmit(event)" class="space-y-4">
         <div class="space-y-1.5">
           <label for="login-username" class="block text-xs font-extrabold uppercase tracking-wider text-slate-700">Kullanıcı Adı</label>
-          <input type="text" id="login-username" autocomplete="username" placeholder="Kullanıcı adınız" required class="glass-input w-full rounded-2xl px-4 py-3 text-sm font-bold text-slate-900" />
+          <input type="text" id="login-username" autocomplete="username" required class="glass-input w-full rounded-2xl px-4 py-3 text-sm font-bold text-slate-900" />
         </div>
 
         <div class="space-y-1.5">
           <label for="login-password" class="block text-xs font-extrabold uppercase tracking-wider text-slate-700">Şifre</label>
           <div class="relative">
-            <input type="password" id="login-password" autocomplete="current-password" placeholder="••••••••" required class="glass-input w-full rounded-2xl px-4 py-3 pr-12 text-sm font-bold text-slate-900" />
+            <input type="password" id="login-password" autocomplete="current-password" required class="glass-input w-full rounded-2xl px-4 py-3 pr-12 text-sm font-bold text-slate-900" />
             <button type="button" onclick="togglePasswordVisibility()" aria-label="Şifreyi göster veya gizle" class="absolute right-3 top-1/2 -translate-y-1/2 text-slate-500 hover:text-slate-900 p-1.5 rounded-lg transition-colors cursor-pointer">
-              <!-- Eye Icon SVG -->
               <svg id="eye-icon-open" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -775,7 +795,67 @@
   </div>
 
   <!-- ========================================================= -->
-  <!-- MODAL 2: OYUNCU PROFİL KARTI MODALI (CLICKABLE PLAYER)    -->
+  <!-- MODAL 2: BULUT SENKRONİZASYONU MODALI (FIREBASE RTDB)     -->
+  <!-- ========================================================= -->
+  <div id="cloud-sync-modal" class="hidden fixed inset-0 z-50 glass-modal-backdrop flex items-center justify-center p-3 sm:p-5 overflow-y-auto" onclick="closeModalOnBackdrop(event, 'cloud-sync-modal')">
+    <div class="glass-modal rounded-3xl max-w-xl w-full my-auto p-6 sm:p-7 space-y-5 animate-modal-pop relative" onclick="event.stopPropagation()">
+      <button type="button" onclick="closeModal('cloud-sync-modal')" aria-label="Kapat" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-slate-900/10 hover:bg-slate-900/20 text-slate-700 flex items-center justify-center font-bold transition-colors cursor-pointer">
+        ✕
+      </button>
+
+      <div class="space-y-1">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-extrabold bg-sky-500/15 text-sky-900 border border-sky-400/40">
+          ☁️ Canlı Çoklu Cihaz Eşitleme
+        </span>
+        <h3 class="text-xl font-extrabold text-slate-900 pt-1">Bulut Senkronizasyonu (PC ↔ Telefon)</h3>
+        <p class="text-xs sm:text-sm text-slate-600">
+          GitHub Pages üzerinde girdiğin skorların arkadaşlarının telefonlarında anlık görünmesi için ücretsiz bir Firebase Realtime Database adresi bağlayabilirsin.
+        </p>
+      </div>
+
+      <!-- Connection Form -->
+      <form onsubmit="handleSaveCloudUrl(event)" class="space-y-3">
+        <div class="space-y-1.5">
+          <label for="cloud-db-url-input" class="block text-xs font-extrabold uppercase tracking-wider text-slate-700">
+            Firebase Realtime Database URL
+          </label>
+          <input type="url" id="cloud-db-url-input" placeholder="https://proje-adin-default-rtdb.firebaseio.com" required class="glass-input w-full rounded-2xl px-4 py-3 text-xs sm:text-sm font-bold text-slate-900" />
+        </div>
+
+        <div class="flex flex-wrap items-center gap-2">
+          <button type="submit" class="flex-1 py-3 px-4 rounded-2xl text-xs sm:text-sm font-extrabold text-white bg-gradient-to-r from-sky-600 via-teal-600 to-purple-600 hover:brightness-110 shadow-md transition-all cursor-pointer active:scale-95">
+            ☁️ Bağlan & Eşitle
+          </button>
+          <button type="button" id="disconnect-cloud-btn" onclick="disconnectCloudSync()" class="hidden py-3 px-4 rounded-2xl text-xs font-extrabold bg-rose-500/15 text-rose-700 hover:bg-rose-500/25 border border-rose-300 transition-colors cursor-pointer">
+            Bağlantıyı Kes
+          </button>
+        </div>
+      </form>
+
+      <!-- Snapshot Fallback Link Button -->
+      <div class="p-3.5 rounded-2xl bg-emerald-500/10 border border-emerald-400/40 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
+        <div class="text-xs text-emerald-950">
+          <strong>Kurulumsuz Alternatif:</strong> Bulut kurmadan mevcut tabloyu tek seferlik link olarak da paylaşabilirsin.
+        </div>
+        <button type="button" onclick="copySnapshotHashLink()" class="shrink-0 px-3.5 py-2 rounded-xl text-xs font-extrabold bg-emerald-600 text-white hover:bg-emerald-700 transition-colors cursor-pointer">
+          🔗 Anlık Veri Linki Kopyala
+        </button>
+      </div>
+
+      <!-- 3-Step 60-Second Guide -->
+      <div class="p-4 rounded-2xl bg-slate-900/5 border border-slate-200/80 space-y-2.5">
+        <h4 class="text-xs font-extrabold uppercase tracking-wider text-slate-800">⚡ 60 Saniyede Ücretsiz Firebase Linki Nasıl Alınır?</h4>
+        <ol class="text-xs text-slate-700 space-y-2 list-decimal list-inside leading-relaxed">
+          <li><strong>console.firebase.google.com</strong> adresine Google hesabınla gir ve <strong>Add project</strong> diyerek ücretsiz bir proje oluştur.</li>
+          <li>Sol menüden <strong>Build → Realtime Database → Create Database</strong> adımlarına tıkla ve güvenlik kuralı olarak <strong>Start in test mode</strong> (<code>.read: true, .write: true</code>) seç.</li>
+          <li>Açılan ekrandaki <code>https://...firebaseio.com</code> adresini kopyalayıp yukarıdaki kutuya yapıştır ve <strong>Bağlan & Eşitle</strong> butonuna bas. Artık <strong>Güncel Linki Paylaş</strong> butonu arkadaşlarına kalıcı canlı link üretecek!</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- MODAL 3: OYUNCU PROFİL KARTI MODALI                       -->
   <!-- ========================================================= -->
   <div id="player-profile-modal" class="hidden fixed inset-0 z-50 glass-modal-backdrop flex items-center justify-center p-3 sm:p-5 overflow-y-auto" onclick="closeModalOnBackdrop(event, 'player-profile-modal')">
     <div class="glass-modal rounded-3xl max-w-2xl w-full my-auto overflow-hidden animate-modal-pop" onclick="event.stopPropagation()">
@@ -787,25 +867,20 @@
 
         <div class="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
           <div id="profile-avatar" class="w-16 h-16 rounded-2xl bg-gradient-to-br from-teal-400 via-sky-400 to-purple-500 flex items-center justify-center font-outfit font-black text-2xl text-slate-950 shadow-lg shrink-0">
-            H
+            ?
           </div>
           <div class="space-y-1.5 min-w-0 flex-1">
             <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2">
-              <h3 id="profile-name" class="text-2xl font-black tracking-tight">Hüseyin</h3>
-              <span id="profile-club-tag" class="px-2.5 py-0.5 rounded-full text-xs font-extrabold bg-white/15 text-teal-200 border border-white/20">
-                Real Madrid
-              </span>
+              <h3 id="profile-name" class="text-2xl font-black tracking-tight">-</h3>
+              <span id="profile-club-tag" class="px-2.5 py-0.5 rounded-full text-xs font-extrabold bg-white/15 text-teal-200 border border-white/20"></span>
             </div>
-            <div id="profile-badges-row" class="flex flex-wrap items-center justify-center sm:justify-start gap-1.5">
-              <!-- Dynamic badges -->
-            </div>
+            <div id="profile-badges-row" class="flex flex-wrap items-center justify-center sm:justify-start gap-1.5"></div>
           </div>
         </div>
       </div>
 
       <!-- Body -->
       <div class="p-5 sm:p-6 space-y-5 max-h-[70vh] overflow-y-auto">
-        <!-- 4 Key Career Metrics -->
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
           <div class="p-3.5 rounded-2xl bg-white/80 border border-white">
             <div class="text-[11px] font-extrabold uppercase text-slate-500">Galibiyet Oranı</div>
@@ -825,24 +900,18 @@
           </div>
         </div>
 
-        <!-- Detailed Record Strip -->
-        <div id="profile-record-strip" class="p-3.5 rounded-2xl bg-slate-900/5 border border-slate-200/70 flex flex-wrap items-center justify-around gap-3 text-xs font-extrabold text-slate-700">
-          <!-- Populated by JS -->
-        </div>
+        <div id="profile-record-strip" class="p-3.5 rounded-2xl bg-slate-900/5 border border-slate-200/70 flex flex-wrap items-center justify-around gap-3 text-xs font-extrabold text-slate-700"></div>
 
-        <!-- Player Match History -->
         <div class="space-y-2.5">
           <h4 class="text-xs font-extrabold uppercase tracking-wider text-slate-600">📋 Oynadığı Maçlar</h4>
-          <div id="profile-matches-list" class="space-y-2.5">
-            <!-- Populated by JS -->
-          </div>
+          <div id="profile-matches-list" class="space-y-2.5"></div>
         </div>
       </div>
     </div>
   </div>
 
   <!-- ========================================================= -->
-  <!-- MODAL 3: DETAYLI MAÇ İSTATİSTİKLERİ MODALI                -->
+  <!-- MODAL 4: DETAYLI MAÇ İSTATİSTİKLERİ MODALI                -->
   <!-- ========================================================= -->
   <div id="match-detail-modal" class="hidden fixed inset-0 z-50 glass-modal-backdrop flex items-center justify-center p-3 sm:p-5 overflow-y-auto" onclick="closeModalOnBackdrop(event, 'match-detail-modal')">
     <div class="glass-modal rounded-3xl max-w-2xl w-full my-auto overflow-hidden animate-modal-pop" onclick="event.stopPropagation()">
@@ -855,30 +924,27 @@
 
         <div class="text-center space-y-1 mb-4">
           <span id="detail-match-label" class="inline-block px-3 py-0.5 rounded-full text-[11px] font-extrabold bg-white/15 text-teal-200">
-            1. Hafta
+            Lig Maçı
           </span>
           <p id="detail-match-date" class="text-xs text-slate-300"></p>
         </div>
 
         <div class="grid grid-cols-11 items-center text-center gap-2">
-          <!-- Home -->
           <div class="col-span-4 space-y-1">
-            <div id="detail-home-avatar" class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-teal-400/20 border border-teal-300/40 mx-auto flex items-center justify-center font-outfit font-bold text-lg text-teal-200">H</div>
-            <h3 id="detail-home-name" class="text-base sm:text-xl font-extrabold truncate">Hüseyin</h3>
+            <div id="detail-home-avatar" class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-teal-400/20 border border-teal-300/40 mx-auto flex items-center justify-center font-outfit font-bold text-lg text-teal-200">-</div>
+            <h3 id="detail-home-name" class="text-base sm:text-xl font-extrabold truncate">-</h3>
             <p id="detail-home-club" class="text-[11px] font-semibold text-teal-200/90 truncate"></p>
           </div>
 
-          <!-- Score -->
           <div class="col-span-3 flex items-center justify-center gap-2 sm:gap-3">
-            <span id="detail-home-score" class="font-outfit text-3xl sm:text-5xl font-black text-white">3</span>
+            <span id="detail-home-score" class="font-outfit text-3xl sm:text-5xl font-black text-white">0</span>
             <span class="text-slate-400 font-bold text-xl">-</span>
             <span id="detail-away-score" class="font-outfit text-3xl sm:text-5xl font-black text-white">0</span>
           </div>
 
-          <!-- Away -->
           <div class="col-span-4 space-y-1">
-            <div id="detail-away-avatar" class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-purple-400/25 border border-purple-300/40 mx-auto flex items-center justify-center font-outfit font-bold text-lg text-purple-200">A</div>
-            <h3 id="detail-away-name" class="text-base sm:text-xl font-extrabold truncate">Arda</h3>
+            <div id="detail-away-avatar" class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-purple-400/25 border border-purple-300/40 mx-auto flex items-center justify-center font-outfit font-bold text-lg text-purple-200">-</div>
+            <h3 id="detail-away-name" class="text-base sm:text-xl font-extrabold truncate">-</h3>
             <p id="detail-away-club" class="text-[11px] font-semibold text-orange-200/90 truncate"></p>
           </div>
         </div>
@@ -891,7 +957,7 @@
           </span>
         </div>
 
-        <!-- Action Bar: WhatsApp Summary Copy + Moderator Edit/Delete -->
+        <!-- Action Bar -->
         <div class="mt-5 pt-4 border-t border-white/15 flex flex-wrap items-center justify-center gap-2.5">
           <button type="button" onclick="copyMatchSummaryToClipboard()" class="px-4 py-2 rounded-xl text-xs font-extrabold bg-emerald-500 text-slate-950 hover:bg-emerald-400 transition-colors cursor-pointer flex items-center gap-1.5 shadow-sm">
             <span>📋 Maç Özetini Kopyala (WhatsApp)</span>
@@ -927,7 +993,7 @@
   </div>
 
   <!-- ========================================================= -->
-  <!-- MODAL 4: MAÇ EKLE / DÜZENLE MODALI (MODERATOR)            -->
+  <!-- MODAL 5: MAÇ EKLE / DÜZENLE MODALI (MODERATOR)            -->
   <!-- ========================================================= -->
   <div id="match-form-modal" class="hidden fixed inset-0 z-50 glass-modal-backdrop flex items-center justify-center p-3 sm:p-5 overflow-y-auto" onclick="closeModalOnBackdrop(event, 'match-form-modal')">
     <div class="glass-modal rounded-3xl max-w-2xl w-full my-auto overflow-hidden animate-modal-pop" onclick="event.stopPropagation()">
@@ -950,7 +1016,7 @@
             <div class="sm:col-span-4 space-y-1.5">
               <label class="block text-xs font-extrabold text-teal-800">Ev Sahibi</label>
               <select id="form-home-player" onchange="handleFormPlayerChange('home')" required class="glass-input w-full rounded-xl px-3 py-2.5 text-sm font-extrabold text-slate-900 cursor-pointer"></select>
-              <input type="text" id="form-home-club" placeholder="Takım (Örn: Real Madrid)" maxlength="26" class="glass-input w-full rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-700" />
+              <input type="text" id="form-home-club" placeholder="Kulüp (İsteğe bağlı)" maxlength="26" class="glass-input w-full rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-700" />
             </div>
 
             <div class="sm:col-span-1">
@@ -968,14 +1034,14 @@
             <div class="sm:col-span-4 space-y-1.5">
               <label class="block text-xs font-extrabold text-purple-800">Deplasman</label>
               <select id="form-away-player" onchange="handleFormPlayerChange('away')" required class="glass-input w-full rounded-xl px-3 py-2.5 text-sm font-extrabold text-slate-900 cursor-pointer"></select>
-              <input type="text" id="form-away-club" placeholder="Takım (Örn: Fenerbahçe)" maxlength="26" class="glass-input w-full rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-700" />
+              <input type="text" id="form-away-club" placeholder="Kulüp (İsteğe bağlı)" maxlength="26" class="glass-input w-full rounded-xl px-3 py-1.5 text-xs font-semibold text-slate-700" />
             </div>
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
             <div>
               <label class="block text-xs font-bold text-slate-600 mb-1">Hafta / Maç Etiketi</label>
-              <input type="text" id="form-match-label" placeholder="Örn: 2. Hafta veya Gece Derbisi" class="glass-input w-full rounded-xl px-3.5 py-2 text-xs sm:text-sm font-semibold text-slate-800" />
+              <input type="text" id="form-match-label" placeholder="Örn: 1. Hafta" class="glass-input w-full rounded-xl px-3.5 py-2 text-xs sm:text-sm font-semibold text-slate-800" />
             </div>
             <div>
               <label class="block text-xs font-bold text-amber-800 mb-1">⭐ Maçın Adamı (MVP) (İsteğe Bağlı)</label>
@@ -984,7 +1050,7 @@
                   <option value="home">Ev</option>
                   <option value="away">Dep</option>
                 </select>
-                <input type="text" id="form-mvp-player" placeholder="Örn: Mbappé (8.5)" maxlength="30" class="glass-input flex-1 rounded-xl px-3 py-2 text-xs sm:text-sm font-semibold text-slate-800" />
+                <input type="text" id="form-mvp-player" placeholder="Futbolcu adı (İsteğe bağlı)" maxlength="30" class="glass-input flex-1 rounded-xl px-3 py-2 text-xs sm:text-sm font-semibold text-slate-800" />
               </div>
             </div>
           </div>
@@ -998,51 +1064,44 @@
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-            <!-- Topla Oynama % -->
             <div class="flex items-center justify-between gap-2 p-2.5 rounded-xl bg-sky-50/85 border border-sky-200/80">
               <input type="number" id="form-poss-home" min="0" max="100" value="50" oninput="syncPossession('home')" class="w-16 rounded-lg border border-sky-300 py-1 text-center text-sm font-extrabold text-teal-700" />
               <span class="text-xs font-extrabold text-sky-900">Topla Oynama %</span>
               <input type="number" id="form-poss-away" min="0" max="100" value="50" oninput="syncPossession('away')" class="w-16 rounded-lg border border-sky-300 py-1 text-center text-sm font-extrabold text-purple-700" />
             </div>
 
-            <!-- Toplam Şut -->
             <div class="flex items-center justify-between gap-2 p-2.5 rounded-xl bg-slate-50/90 border border-slate-200/70">
-              <input type="number" id="form-shots-home" min="0" value="8" class="w-16 rounded-lg border border-slate-300 py-1 text-center text-sm font-extrabold text-teal-700" />
+              <input type="number" id="form-shots-home" min="0" value="0" class="w-16 rounded-lg border border-slate-300 py-1 text-center text-sm font-extrabold text-teal-700" />
               <span class="text-xs font-bold text-slate-700">Toplam Şut</span>
-              <input type="number" id="form-shots-away" min="0" value="6" class="w-16 rounded-lg border border-slate-300 py-1 text-center text-sm font-extrabold text-purple-700" />
+              <input type="number" id="form-shots-away" min="0" value="0" class="w-16 rounded-lg border border-slate-300 py-1 text-center text-sm font-extrabold text-purple-700" />
             </div>
 
-            <!-- İsabetli Şut -->
             <div class="flex items-center justify-between gap-2 p-2.5 rounded-xl bg-slate-50/90 border border-slate-200/70">
-              <input type="number" id="form-sot-home" min="0" value="5" class="w-16 rounded-lg border border-slate-300 py-1 text-center text-sm font-extrabold text-teal-700" />
+              <input type="number" id="form-sot-home" min="0" value="0" class="w-16 rounded-lg border border-slate-300 py-1 text-center text-sm font-extrabold text-teal-700" />
               <span class="text-xs font-bold text-slate-700">İsabetli Şut</span>
-              <input type="number" id="form-sot-away" min="0" value="3" class="w-16 rounded-lg border border-slate-300 py-1 text-center text-sm font-extrabold text-purple-700" />
+              <input type="number" id="form-sot-away" min="0" value="0" class="w-16 rounded-lg border border-slate-300 py-1 text-center text-sm font-extrabold text-purple-700" />
             </div>
 
-            <!-- Başarılı Pas -->
             <div class="flex items-center justify-between gap-2 p-2.5 rounded-xl bg-slate-50/90 border border-slate-200/70">
-              <input type="number" id="form-passes-home" min="0" value="120" class="w-16 rounded-lg border border-slate-300 py-1 text-center text-sm font-extrabold text-teal-700" />
+              <input type="number" id="form-passes-home" min="0" value="0" class="w-16 rounded-lg border border-slate-300 py-1 text-center text-sm font-extrabold text-teal-700" />
               <span class="text-xs font-bold text-slate-700">Başarılı Pas</span>
-              <input type="number" id="form-passes-away" min="0" value="110" class="w-16 rounded-lg border border-slate-300 py-1 text-center text-sm font-extrabold text-purple-700" />
+              <input type="number" id="form-passes-away" min="0" value="0" class="w-16 rounded-lg border border-slate-300 py-1 text-center text-sm font-extrabold text-purple-700" />
             </div>
 
-            <!-- Faul -->
             <div class="flex items-center justify-between gap-2 p-2.5 rounded-xl bg-slate-50/90 border border-slate-200/70">
-              <input type="number" id="form-fouls-home" min="0" value="2" class="w-16 rounded-lg border border-slate-300 py-1 text-center text-sm font-extrabold text-teal-700" />
+              <input type="number" id="form-fouls-home" min="0" value="0" class="w-16 rounded-lg border border-slate-300 py-1 text-center text-sm font-extrabold text-teal-700" />
               <span class="text-xs font-bold text-slate-700">Faul</span>
-              <input type="number" id="form-fouls-away" min="0" value="3" class="w-16 rounded-lg border border-slate-300 py-1 text-center text-sm font-extrabold text-purple-700" />
+              <input type="number" id="form-fouls-away" min="0" value="0" class="w-16 rounded-lg border border-slate-300 py-1 text-center text-sm font-extrabold text-purple-700" />
             </div>
 
-            <!-- Sarı Kart -->
             <div class="flex items-center justify-between gap-2 p-2.5 rounded-xl bg-amber-50/80 border border-amber-200/80">
               <input type="number" id="form-yc-home" min="0" value="0" class="w-16 rounded-lg border border-amber-300 py-1 text-center text-sm font-extrabold text-teal-700" />
               <span class="text-xs font-extrabold text-amber-800 flex items-center gap-1">
                 <span class="inline-block w-2.5 h-3.5 rounded-[2px] bg-amber-400 border border-amber-500"></span> Sarı Kart
               </span>
-              <input type="number" id="form-yc-away" min="0" value="1" class="w-16 rounded-lg border border-amber-300 py-1 text-center text-sm font-extrabold text-purple-700" />
+              <input type="number" id="form-yc-away" min="0" value="0" class="w-16 rounded-lg border border-amber-300 py-1 text-center text-sm font-extrabold text-purple-700" />
             </div>
 
-            <!-- Kırmızı Kart -->
             <div class="sm:col-span-2 flex items-center justify-between gap-2 p-2.5 rounded-xl bg-rose-50/80 border border-rose-200/80 max-w-sm mx-auto w-full">
               <input type="number" id="form-rc-home" min="0" value="0" class="w-16 rounded-lg border border-rose-300 py-1 text-center text-sm font-extrabold text-teal-700" />
               <span class="text-xs font-extrabold text-rose-800 flex items-center gap-1">
@@ -1061,7 +1120,7 @@
               <option value="home">Ev Sahibi</option>
               <option value="away">Deplasman</option>
             </select>
-            <input type="text" id="form-goal-scorer" placeholder="Golcü (Örn: Mbappé)" class="sm:col-span-4 glass-input rounded-xl px-3 py-2 text-xs font-semibold text-slate-900" />
+            <input type="text" id="form-goal-scorer" placeholder="Golcü futbolcu" class="sm:col-span-4 glass-input rounded-xl px-3 py-2 text-xs font-semibold text-slate-900" />
             <input type="text" id="form-goal-assist" placeholder="Asist (İsteğe bağlı)" class="sm:col-span-3 glass-input rounded-xl px-3 py-2 text-xs font-semibold text-slate-900" />
             <div class="sm:col-span-2 flex gap-1.5">
               <input type="number" id="form-goal-minute" min="1" max="130" placeholder="Dk" class="w-14 glass-input rounded-xl px-2 py-2 text-xs font-extrabold text-center text-slate-900" />
@@ -1090,11 +1149,12 @@
   <!-- APPLICATION ENGINE (JavaScript)                           -->
   <!-- ========================================================= -->
   <script>
-    const STORAGE_KEY = 'ligipes_final_league_v3';
-    const SESSION_MOD_KEY = 'ligipes_final_is_mod';
+    const STORAGE_KEY = 'ligipes_clean_league_v4';
+    const CLOUD_URL_KEY = 'ligipes_cloud_db_url_v1';
+    const SESSION_MOD_KEY = 'ligipes_clean_is_mod';
     const MOD_CREDENTIALS = { username: 'mazlum11', password: '4321' };
 
-    // Safe Storage Helpers for Restricted Sandboxes
+    // Safe Storage Helpers
     const memoryStorageFallback = {};
     function safeGetItem(key, isSession = false) {
       try {
@@ -1110,141 +1170,32 @@
         memoryStorageFallback[key] = val;
       }
     }
+    function safeRemoveItem(key, isSession = false) {
+      try {
+        (isSession ? window.sessionStorage : window.localStorage).removeItem(key);
+      } catch (e) {
+        delete memoryStorageFallback[key];
+      }
+    }
 
-    // Rich Sample Data: Hüseyin, Arda, Emirhan, Doğan, Samet, Yusuf
-    function getStarterDemoData() {
+    // 100% Empty Initial State (Zero Pre-Populated Dummy Data)
+    function getEmptyLeagueState() {
       return {
-        players: [
-          { id: 'p_huseyin', name: 'Hüseyin', club: 'Real Madrid' },
-          { id: 'p_arda', name: 'Arda', club: 'Fenerbahçe' },
-          { id: 'p_emirhan', name: 'Emirhan', club: 'Manchester City' },
-          { id: 'p_dogan', name: 'Doğan', club: 'Bayern Münih' },
-          { id: 'p_samet', name: 'Samet', club: 'Arsenal' },
-          { id: 'p_yusuf', name: 'Yusuf', club: 'Barcelona' }
-        ],
-        matches: [
-          {
-            id: 'm_1',
-            date: '24 Kas 2026',
-            label: '1. Hafta • Açılış Derbisi',
-            homeId: 'p_huseyin',
-            awayId: 'p_arda',
-            homeClub: 'Real Madrid',
-            awayClub: 'Fenerbahçe',
-            homeGoals: 3,
-            awayGoals: 0,
-            mvp: { side: 'home', name: 'Mbappé (8.5)' },
-            stats: {
-              possession: [61, 39],
-              shots: [13, 4],
-              shotsOnTarget: [8, 1],
-              passes: [152, 108],
-              fouls: [3, 6],
-              yellowCards: [0, 2],
-              redCards: [0, 1]
-            },
-            scorers: [
-              { id: 'g_1', team: 'home', scorer: 'Mbappé', assist: 'De Bruyne', minute: 14 },
-              { id: 'g_2', team: 'home', scorer: 'Bellingham', assist: 'Vinicius Jr', minute: 52 },
-              { id: 'g_3', team: 'home', scorer: 'Mbappé', assist: 'Bellingham', minute: 81 }
-            ]
-          },
-          {
-            id: 'm_2',
-            date: '24 Kas 2026',
-            label: '1. Hafta • Nefes Kesen Düello',
-            homeId: 'p_emirhan',
-            awayId: 'p_dogan',
-            homeClub: 'Manchester City',
-            awayClub: 'Bayern Münih',
-            homeGoals: 2,
-            awayGoals: 2,
-            mvp: { side: 'away', name: 'Harry Kane (8.0)' },
-            stats: {
-              possession: [49, 51],
-              shots: [10, 11],
-              shotsOnTarget: [5, 6],
-              passes: [134, 139],
-              fouls: [4, 3],
-              yellowCards: [1, 1],
-              redCards: [0, 0]
-            },
-            scorers: [
-              { id: 'g_4', team: 'home', scorer: 'Haaland', assist: 'Foden', minute: 18 },
-              { id: 'g_5', team: 'away', scorer: 'Harry Kane', assist: 'Musiala', minute: 33 },
-              { id: 'g_6', team: 'away', scorer: 'Harry Kane', assist: 'Sané', minute: 62 },
-              { id: 'g_7', team: 'home', scorer: 'Foden', assist: 'De Bruyne', minute: 74 }
-            ]
-          },
-          {
-            id: 'm_3',
-            date: '24 Kas 2026',
-            label: '1. Hafta • Gol Yağmuru',
-            homeId: 'p_yusuf',
-            awayId: 'p_samet',
-            homeClub: 'Barcelona',
-            awayClub: 'Arsenal',
-            homeGoals: 4,
-            awayGoals: 2,
-            mvp: { side: 'home', name: 'Lamine Yamal (8.5)' },
-            stats: {
-              possession: [57, 43],
-              shots: [14, 8],
-              shotsOnTarget: [9, 4],
-              passes: [146, 118],
-              fouls: [2, 4],
-              yellowCards: [0, 1],
-              redCards: [0, 0]
-            },
-            scorers: [
-              { id: 'g_8', team: 'home', scorer: 'Lewandowski', assist: 'Lamine Yamal', minute: 11 },
-              { id: 'g_9', team: 'away', scorer: 'Saka', assist: 'Ødegaard', minute: 26 },
-              { id: 'g_10', team: 'home', scorer: 'Lamine Yamal', assist: 'Pedri', minute: 44 },
-              { id: 'g_11', team: 'home', scorer: 'Raphinha', assist: 'Lamine Yamal', minute: 59 },
-              { id: 'g_12', team: 'away', scorer: 'Havertz', assist: 'Saka', minute: 71 },
-              { id: 'g_13', team: 'home', scorer: 'Lewandowski', assist: 'Gavi', minute: 86 }
-            ]
-          },
-          {
-            id: 'm_4',
-            date: '24 Kas 2026',
-            label: '2. Hafta • Zirve Yarışı',
-            homeId: 'p_yusuf',
-            awayId: 'p_huseyin',
-            homeClub: 'Barcelona',
-            awayClub: 'Real Madrid',
-            homeGoals: 1,
-            awayGoals: 2,
-            mvp: { side: 'away', name: 'Vinicius Jr (8.0)' },
-            stats: {
-              possession: [53, 47],
-              shots: [9, 11],
-              shotsOnTarget: [4, 6],
-              passes: [137, 129],
-              fouls: [4, 3],
-              yellowCards: [1, 1],
-              redCards: [0, 0]
-            },
-            scorers: [
-              { id: 'g_14', team: 'away', scorer: 'Vinicius Jr', assist: 'Mbappé', minute: 22 },
-              { id: 'g_15', team: 'home', scorer: 'Lamine Yamal', assist: 'Pedri', minute: 50 },
-              { id: 'g_16', team: 'away', scorer: 'Bellingham', assist: 'Vinicius Jr', minute: 84 }
-            ]
-          }
-        ],
-        fixtures: [
-          { id: 'f_1', weekLabel: '2. Hafta', homeId: 'p_arda', awayId: 'p_emirhan' },
-          { id: 'f_2', weekLabel: '2. Hafta', homeId: 'p_dogan', awayId: 'p_samet' }
-        ]
+        players: [],
+        matches: [],
+        fixtures: []
       };
     }
 
     // Application State
     let leagueData = loadLeagueData();
+    let cloudDbUrl = normalizeFirebaseUrl(safeGetItem(CLOUD_URL_KEY, false) || '');
     let isModerator = safeGetItem(SESSION_MOD_KEY, true) === 'true';
     let currentMainTab = 'standings';
-    let currentMatchFilterMode = 'all'; // 'all' | 'played' | 'fixtures'
+    let currentMatchFilterMode = 'all';
     let matchPlayerFilterId = 'all';
+    let lastCloudFingerprint = '';
+    let cloudPollingTimer = null;
 
     // Modal & Form State
     let activeDetailMatchId = null;
@@ -1262,24 +1213,25 @@
     function loadLeagueData() {
       const raw = safeGetItem(STORAGE_KEY, false);
       if (!raw) {
-        const starter = getStarterDemoData();
-        safeSetItem(STORAGE_KEY, JSON.stringify(starter), false);
-        return starter;
+        return getEmptyLeagueState();
       }
       try {
         const parsed = JSON.parse(raw);
-        if (Array.isArray(parsed.players) && Array.isArray(parsed.matches)) {
-          if (!Array.isArray(parsed.fixtures)) parsed.fixtures = [];
-          return parsed;
-        }
+        return {
+          players: Array.isArray(parsed.players) ? parsed.players : [],
+          matches: Array.isArray(parsed.matches) ? parsed.matches : [],
+          fixtures: Array.isArray(parsed.fixtures) ? parsed.fixtures : []
+        };
       } catch (e) {
-        console.error('Veri yükleme hatası:', e);
+        return getEmptyLeagueState();
       }
-      return getStarterDemoData();
     }
 
-    function saveLeagueData() {
+    function saveLeagueData(shouldPushCloud = true) {
       safeSetItem(STORAGE_KEY, JSON.stringify(leagueData), false);
+      if (shouldPushCloud && cloudDbUrl) {
+        pushStateToCloud(true);
+      }
     }
 
     function escapeHTML(str) {
@@ -1313,7 +1265,7 @@
       if (!ok && navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(text).catch(() => {});
       }
-      showToast(toastMessage, 'success');
+      if (toastMessage) showToast(toastMessage, 'success');
     }
 
     // Floating Toast Notification
@@ -1335,7 +1287,7 @@
       setTimeout(() => {
         toast.classList.add('opacity-0', 'translate-y-2');
         setTimeout(() => toast.remove(), 300);
-      }, 3200);
+      }, 3600);
     }
 
     // Confetti Celebration Animation
@@ -1346,7 +1298,7 @@
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
 
-      const colors = ['#7c3aed', '#ff0055', '#f97316', '#00e5ff', '#10b981', '#facc15'];
+      const colors = ['#a855f7', '#ff1e42', '#f97316', '#2dd4bf', '#38bdf8', '#facc15'];
       const particles = Array.from({ length: 115 }, () => ({
         x: Math.random() * canvas.width,
         y: -20 - Math.random() * 140,
@@ -1383,6 +1335,368 @@
         }
       }
       requestAnimationFrame(animate);
+    }
+
+    // =========================================================
+    // MECHANISM A & B: URL HASH COMPRESSION & CLOUD SYNC ENGINE
+    // =========================================================
+    function uint8ToBase64Url(bytes) {
+      let binary = '';
+      const chunkSize = 0x8000;
+      for (let i = 0; i < bytes.length; i += chunkSize) {
+        binary += String.fromCharCode.apply(null, bytes.subarray(i, i + chunkSize));
+      }
+      return btoa(binary).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+    }
+
+    function base64UrlToUint8(b64url) {
+      let b64 = b64url.replace(/-/g, '+').replace(/_/g, '/');
+      while (b64.length % 4) b64 += '=';
+      const binary = atob(b64);
+      const bytes = new Uint8Array(binary.length);
+      for (let i = 0; i < binary.length; i++) {
+        bytes[i] = binary.charCodeAt(i);
+      }
+      return bytes;
+    }
+
+    function encodeStringBase64Url(str) {
+      const bytes = new TextEncoder().encode(str);
+      return uint8ToBase64Url(bytes);
+    }
+
+    function decodeStringBase64Url(b64url) {
+      const bytes = base64UrlToUint8(b64url);
+      return new TextDecoder().decode(bytes);
+    }
+
+    async function encodeLeagueStateToHashToken(stateObj) {
+      const compactPayload = JSON.stringify({
+        p: stateObj.players,
+        m: stateObj.matches,
+        f: stateObj.fixtures
+      });
+      const rawBytes = new TextEncoder().encode(compactPayload);
+
+      if (typeof CompressionStream !== 'undefined') {
+        try {
+          const cs = new CompressionStream('deflate-raw');
+          const writer = cs.writable.getWriter();
+          writer.write(rawBytes);
+          writer.close();
+          const compressedBuffer = await new Response(cs.readable).arrayBuffer();
+          return 'z.' + uint8ToBase64Url(new Uint8Array(compressedBuffer));
+        } catch (e) {
+          // Fallback to uncompressed UTF-8 base64url
+        }
+      }
+      return 'u.' + uint8ToBase64Url(rawBytes);
+    }
+
+    async function decodeLeagueStateFromHashToken(token) {
+      let jsonText = '';
+      if (token.startsWith('z.')) {
+        const compressedBytes = base64UrlToUint8(token.slice(2));
+        if (typeof DecompressionStream === 'undefined') {
+          throw new Error('Tarayıcı sıkıştırılmış veriyi desteklemiyor.');
+        }
+        const ds = new DecompressionStream('deflate-raw');
+        const writer = ds.writable.getWriter();
+        writer.write(compressedBytes);
+        writer.close();
+        const decompressedBuffer = await new Response(ds.readable).arrayBuffer();
+        jsonText = new TextDecoder().decode(decompressedBuffer);
+      } else if (token.startsWith('u.')) {
+        jsonText = decodeStringBase64Url(token.slice(2));
+      } else {
+        jsonText = decodeStringBase64Url(token);
+      }
+
+      const parsed = JSON.parse(jsonText);
+      return {
+        players: Array.isArray(parsed.p || parsed.players) ? (parsed.p || parsed.players) : [],
+        matches: Array.isArray(parsed.m || parsed.matches) ? (parsed.m || parsed.matches) : [],
+        fixtures: Array.isArray(parsed.f || parsed.fixtures) ? (parsed.f || parsed.fixtures) : []
+      };
+    }
+
+    function getCleanBaseUrl() {
+      return window.location.origin + window.location.pathname;
+    }
+
+    // Primary Share Button Handler (Cloud Link if connected, otherwise Compressed Snapshot Link)
+    async function shareLeagueLinkToClipboard() {
+      if (cloudDbUrl) {
+        const encodedDb = encodeStringBase64Url(cloudDbUrl);
+        const liveUrl = `${getCleanBaseUrl()}#cloud=${encodedDb}`;
+        copyToClipboard(
+          liveUrl,
+          'Canlı Bulut Linki kopyalandı! Arkadaşların bu linke 1 kez tıkladığında tüm güncellemeleri otomatik görecek.'
+        );
+        return;
+      }
+
+      await copySnapshotHashLink();
+    }
+
+    async function copySnapshotHashLink() {
+      try {
+        const token = await encodeLeagueStateToHashToken(leagueData);
+        const shareUrl = `${getCleanBaseUrl()}#lig=${token}`;
+        copyToClipboard(
+          shareUrl,
+          'Güncel lig linki kopyalandı! WhatsApp grubuna yapıştırıp paylaşabilirsin.'
+        );
+      } catch (err) {
+        showToast('Paylaşım linki oluşturulurken bir hata oluştu.', 'error');
+      }
+    }
+
+    // Firebase Realtime Database REST Helpers
+    function normalizeFirebaseUrl(rawUrl) {
+      let u = String(rawUrl || '').trim();
+      if (!u) return '';
+      u = u.replace(/\/+$/, '');
+      u = u.replace(/\/ligipes_state\.json$/i, '');
+      u = u.replace(/\.json$/i, '');
+      u = u.replace(/\/+$/, '');
+      if (!/^https:\/\/[a-zA-Z0-9.-]+/i.test(u)) return '';
+      return u;
+    }
+
+    function updateCloudStatusUI(status = 'idle') {
+      const pill = document.getElementById('cloud-status-pill');
+      const text = document.getElementById('cloud-status-text');
+      const disconnectBtn = document.getElementById('disconnect-cloud-btn');
+      const urlInput = document.getElementById('cloud-db-url-input');
+
+      if (!cloudDbUrl) {
+        pill.classList.add('hidden');
+        if (disconnectBtn) disconnectBtn.classList.add('hidden');
+        return;
+      }
+
+      pill.classList.remove('hidden');
+      if (disconnectBtn) disconnectBtn.classList.remove('hidden');
+      if (urlInput && document.activeElement !== urlInput) {
+        urlInput.value = cloudDbUrl;
+      }
+
+      if (status === 'syncing') {
+        text.textContent = 'Eşitleniyor...';
+      } else if (status === 'error') {
+        text.textContent = 'Bulut Hatası';
+      } else {
+        text.textContent = 'Canlı Bulut';
+      }
+    }
+
+    async function pushStateToCloud(silent = true) {
+      if (!cloudDbUrl) return false;
+      updateCloudStatusUI('syncing');
+      try {
+        const payload = {
+          players: leagueData.players,
+          matches: leagueData.matches,
+          fixtures: leagueData.fixtures,
+          updatedAt: Date.now()
+        };
+        const res = await fetch(`${cloudDbUrl}/ligipes_state.json`, {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        lastCloudFingerprint = JSON.stringify({
+          p: payload.players,
+          m: payload.matches,
+          f: payload.fixtures
+        });
+        updateCloudStatusUI('connected');
+        if (!silent) showToast('Bulut veritabanı ile eşitlendi! ☁️', 'success');
+        return true;
+      } catch (err) {
+        console.error('Bulut yazma hatası:', err);
+        updateCloudStatusUI('error');
+        if (!silent) {
+          showToast('Bulut bağlantısı başarısız! Firebase adresini ve Test Mode kurallarını kontrol edin.', 'error');
+        }
+        return false;
+      }
+    }
+
+    async function pullStateFromCloud(silent = true) {
+      if (!cloudDbUrl) return false;
+      updateCloudStatusUI('syncing');
+      try {
+        const res = await fetch(`${cloudDbUrl}/ligipes_state.json?t=${Date.now()}`, {
+          cache: 'no-store'
+        });
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const remote = await res.json();
+        updateCloudStatusUI('connected');
+
+        if (!remote || typeof remote !== 'object') {
+          if (!silent) showToast('Bulutta henüz kayıtlı veri yok.', 'info');
+          return false;
+        }
+
+        const normalizedRemote = {
+          players: Array.isArray(remote.players) ? remote.players : [],
+          matches: Array.isArray(remote.matches) ? remote.matches : [],
+          fixtures: Array.isArray(remote.fixtures) ? remote.fixtures : []
+        };
+
+        const remoteFp = JSON.stringify({
+          p: normalizedRemote.players,
+          m: normalizedRemote.matches,
+          f: normalizedRemote.fixtures
+        });
+
+        const localFp = JSON.stringify({
+          p: leagueData.players,
+          m: leagueData.matches,
+          f: leagueData.fixtures
+        });
+
+        if (remoteFp !== localFp) {
+          leagueData = normalizedRemote;
+          lastCloudFingerprint = remoteFp;
+          safeSetItem(STORAGE_KEY, JSON.stringify(leagueData), false);
+          renderAll();
+          showToast(silent ? 'Canlı skor tablosu güncellendi! ⚡' : 'Canlı bulut verileri yüklendi! ☁️', 'success');
+        } else if (!silent) {
+          showToast('Lig verileri zaten en güncel durumda!', 'info');
+        }
+        return true;
+      } catch (err) {
+        console.error('Bulut okuma hatası:', err);
+        updateCloudStatusUI('error');
+        if (!silent) showToast('Buluttan veri alınamadı. İnternet veya Firebase bağlantısını kontrol edin.', 'error');
+        return false;
+      }
+    }
+
+    function startCloudBackgroundPolling() {
+      if (cloudPollingTimer) clearInterval(cloudPollingTimer);
+      if (!cloudDbUrl) return;
+      cloudPollingTimer = setInterval(() => {
+        pullStateFromCloud(true);
+      }, 15000);
+    }
+
+    function openCloudSyncModal() {
+      if (!isModerator) return;
+      updateCloudStatusUI('connected');
+      document.getElementById('cloud-sync-modal').classList.remove('hidden');
+    }
+
+    async function handleSaveCloudUrl(e) {
+      e.preventDefault();
+      if (!isModerator) return;
+      const raw = document.getElementById('cloud-db-url-input').value;
+      const normalized = normalizeFirebaseUrl(raw);
+      if (!normalized) {
+        showToast('Lütfen geçerli bir https://...firebaseio.com adresi girin.', 'error');
+        return;
+      }
+
+      cloudDbUrl = normalized;
+      safeSetItem(CLOUD_URL_KEY, cloudDbUrl, false);
+      updateCloudStatusUI('syncing');
+
+      const hasLocalData = leagueData.players.length > 0 || leagueData.matches.length > 0 || leagueData.fixtures.length > 0;
+      if (hasLocalData) {
+        const ok = await pushStateToCloud(false);
+        if (ok) {
+          startCloudBackgroundPolling();
+          closeModal('cloud-sync-modal');
+        }
+      } else {
+        const pulled = await pullStateFromCloud(false);
+        if (!pulled) {
+          await pushStateToCloud(false);
+        }
+        startCloudBackgroundPolling();
+        closeModal('cloud-sync-modal');
+      }
+    }
+
+    function disconnectCloudSync() {
+      cloudDbUrl = '';
+      safeRemoveItem(CLOUD_URL_KEY, false);
+      if (cloudPollingTimer) clearInterval(cloudPollingTimer);
+      document.getElementById('cloud-db-url-input').value = '';
+      updateCloudStatusUI('idle');
+      showToast('Bulut senkronizasyonu bağlantısı kesildi.', 'info');
+    }
+
+    async function handleManualRefresh() {
+      const icon = document.getElementById('refresh-icon-svg');
+      if (icon) {
+        icon.classList.add('rotate-180');
+        setTimeout(() => icon.classList.remove('rotate-180'), 550);
+      }
+
+      await processIncomingUrlHash(false);
+      if (cloudDbUrl) {
+        await pullStateFromCloud(false);
+      } else {
+        leagueData = loadLeagueData();
+        renderAll();
+        showToast('Ekran yenilendi! Arkadaşlarının skorlarını anlık görmek için paylaşılan güncel linki açabilirsin.', 'info');
+      }
+    }
+
+    // Parse #lig=... or #cloud=... on startup or hash change
+    async function processIncomingUrlHash(isInitialBoot = true) {
+      const hash = window.location.hash.replace(/^#/, '');
+      if (!hash) return false;
+
+      const params = new URLSearchParams(hash);
+      const ligToken = params.get('lig');
+      const cloudToken = params.get('cloud');
+
+      let updated = false;
+
+      if (cloudToken) {
+        try {
+          const decodedUrl = normalizeFirebaseUrl(decodeStringBase64Url(cloudToken));
+          if (decodedUrl) {
+            cloudDbUrl = decodedUrl;
+            safeSetItem(CLOUD_URL_KEY, cloudDbUrl, false);
+            updateCloudStatusUI('syncing');
+            await pullStateFromCloud(false);
+            startCloudBackgroundPolling();
+            updated = true;
+          }
+        } catch (err) {
+          console.error('Bulut linki çözümlenemedi:', err);
+        }
+      }
+
+      if (ligToken) {
+        try {
+          const decodedState = await decodeLeagueStateFromHashToken(ligToken);
+          leagueData = decodedState;
+          safeSetItem(STORAGE_KEY, JSON.stringify(leagueData), false);
+          renderAll();
+          showToast('Güncel lig verileri yüklendi! 🎉', 'success');
+          updated = true;
+
+          // Clean URL hash cleanly so refreshing doesn't overwrite future local edits
+          if (window.history && window.history.replaceState) {
+            window.history.replaceState(null, '', window.location.pathname + window.location.search);
+          }
+        } catch (err) {
+          console.error('Link verisi okunamadı:', err);
+          if (isInitialBoot) {
+            showToast('Paylaşılan lig linki okunamadı veya eksik kopyalanmış.', 'error');
+          }
+        }
+      }
+
+      return updated;
     }
 
     // =========================================================
@@ -1530,7 +1844,6 @@
           mostShotsMatch = { match: m, homeName, awayName, totalShots };
         }
 
-        // MVP aggregation
         if (m.mvp && m.mvp.name && m.mvp.name.trim()) {
           const friendId = m.mvp.side === 'away' ? m.awayId : m.homeId;
           const friendName = playerMap[friendId] || 'Bilinmiyor';
@@ -1540,7 +1853,6 @@
           mvpMap[mKey].count += 1;
         }
 
-        // Goals & Assists aggregation
         if (Array.isArray(m.scorers)) {
           m.scorers.forEach(entry => {
             const friendId = entry.team === 'home' ? m.homeId : m.awayId;
@@ -1571,7 +1883,7 @@
     }
 
     // =========================================================
-    // AUTHENTICATION (NO CREDENTIAL HINTS!)
+    // AUTHENTICATION (STRICTLY NO CREDENTIAL HINTS)
     // =========================================================
     function handleAuthButtonClick() {
       if (isModerator) {
@@ -1621,11 +1933,11 @@
         closeModal('login-modal');
         updateAuthUI();
         renderAll();
-        showToast(`Hoş geldin ${MOD_CREDENTIALS.username}! Moderatör kontrol paneli aktif.`, 'success');
+        showToast('Moderatör girişi başarılı! Yönetim paneli aktif.', 'success');
       } else {
         document.getElementById('login-error-box').classList.remove('hidden');
         card.classList.remove('animate-shake');
-        void card.offsetWidth; // trigger reflow for repeated shakes
+        void card.offsetWidth;
         card.classList.add('animate-shake');
       }
     }
@@ -1640,10 +1952,10 @@
       const adminNavTab = document.getElementById('nav-tab-admin');
 
       if (isModerator) {
-        roleBadge.className = 'flex items-center gap-2 px-3.5 py-2 rounded-2xl text-xs sm:text-sm font-extrabold bg-purple-600/15 border border-purple-400/50 text-purple-900 shadow-2xs';
-        roleBadge.innerHTML = `<span class="w-2.5 h-2.5 rounded-full bg-purple-600 animate-pulse"></span><span>Moderatör: mazlum11</span>`;
+        roleBadge.className = 'flex items-center gap-2 px-3 py-2 rounded-2xl text-xs font-extrabold bg-purple-600/15 border border-purple-400/50 text-purple-900 shadow-2xs';
+        roleBadge.innerHTML = `<span class="w-2 h-2 rounded-full bg-purple-600 animate-pulse"></span><span>Moderatör</span>`;
 
-        authBtn.className = 'px-4 py-2.5 rounded-2xl text-xs sm:text-sm font-bold text-rose-700 bg-rose-500/15 hover:bg-rose-500/25 border border-rose-300 transition-all flex items-center gap-2 cursor-pointer active:scale-95';
+        authBtn.className = 'px-3.5 py-2 rounded-2xl text-xs font-bold text-rose-700 bg-rose-500/15 hover:bg-rose-500/25 border border-rose-300 transition-all flex items-center gap-1.5 cursor-pointer active:scale-95';
         authBtnLabel.textContent = 'Çıkış Yap';
 
         modControlBar.classList.remove('hidden');
@@ -1652,10 +1964,10 @@
         adminNavTab.classList.remove('hidden');
         adminNavTab.classList.add('flex');
       } else {
-        roleBadge.className = 'flex items-center gap-2 px-3.5 py-2 rounded-2xl text-xs sm:text-sm font-semibold bg-white/80 border border-slate-200/80 text-slate-700 shadow-2xs';
-        roleBadge.innerHTML = `<span class="w-2 h-2 rounded-full bg-teal-500 animate-pulse"></span><span>Misafir Görünümü</span>`;
+        roleBadge.className = 'flex items-center gap-2 px-3 py-2 rounded-2xl text-xs font-semibold bg-white/80 border border-slate-200/80 text-slate-700 shadow-2xs';
+        roleBadge.innerHTML = `<span class="w-2 h-2 rounded-full bg-teal-500 animate-pulse"></span><span>Misafir</span>`;
 
-        authBtn.className = 'px-4 py-2.5 rounded-2xl text-xs sm:text-sm font-bold text-white bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 hover:from-purple-700 hover:to-orange-600 shadow-md hover:shadow-lg transition-all flex items-center gap-2 cursor-pointer active:scale-95';
+        authBtn.className = 'px-3.5 py-2 rounded-2xl text-xs font-bold text-white bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 hover:from-purple-700 hover:to-orange-600 shadow-md hover:shadow-lg transition-all flex items-center gap-1.5 cursor-pointer active:scale-95';
         authBtnLabel.textContent = 'Moderatör Girişi';
 
         modControlBar.classList.add('hidden');
@@ -1698,6 +2010,11 @@
       switchMatchFilterMode('fixtures');
     }
 
+    function openAddPlayerQuickAction() {
+      switchMainTab('admin');
+      setTimeout(() => document.getElementById('admin-new-player-name')?.focus(), 80);
+    }
+
     function switchMatchFilterMode(mode) {
       currentMatchFilterMode = mode;
       const modes = ['all', 'played', 'fixtures'];
@@ -1724,7 +2041,7 @@
     }
 
     // =========================================================
-    // RENDERING ALL VIEWS
+    // RENDERING ALL VIEWS (WITH CLEAN EMPTY STATES)
     // =========================================================
     function renderAll() {
       const metrics = calculateLeagueMetrics();
@@ -1744,119 +2061,135 @@
       document.getElementById('card-leader-name').textContent = leaderObj ? leaderObj.name : '-';
       document.getElementById('card-leader-sub').textContent = leaderObj
         ? `${leaderObj.points} Puan • ${leaderObj.won}G ${leaderObj.drawn}B ${leaderObj.lost}M`
-        : 'Maç bekleniyor';
+        : 'Henüz veri yok';
 
       const attackObj = topAttackId ? mapById[topAttackId] : null;
       document.getElementById('card-topattack-name').textContent = attackObj ? attackObj.name : '-';
       document.getElementById('card-topattack-sub').textContent = attackObj
         ? `${attackObj.gf} Atılan Gol`
-        : '0 Atılan Gol';
+        : 'Henüz veri yok';
 
       const defenseObj = bestDefenseId ? mapById[bestDefenseId] : null;
       document.getElementById('card-defense-name').textContent = defenseObj ? defenseObj.name : '-';
       document.getElementById('card-defense-sub').textContent = defenseObj
         ? `${defenseObj.ga} Yenilen Gol (${defenseObj.played} maç)`
-        : '0 Yenilen Gol';
+        : 'Henüz veri yok';
 
       const butcherObj = butcherId ? mapById[butcherId] : null;
       document.getElementById('card-butcher-name').textContent = butcherObj ? butcherObj.name : '-';
       document.getElementById('card-butcher-sub').textContent = butcherObj
         ? `${butcherObj.yellowCards} Sarı, ${butcherObj.redCards} Kırmızı Kart`
-        : '0 Toplam Kart';
+        : 'Henüz veri yok';
 
       document.getElementById('standings-match-count').textContent = `${leagueData.matches.length} Maç`;
       const tbody = document.getElementById('standings-tbody');
 
       if (!standings.length) {
-        tbody.innerHTML = `<tr><td colspan="11" class="py-10 text-center text-sm font-medium text-slate-500">Ligde henüz oyuncu bulunmuyor.</td></tr>`;
-        return;
-      }
+        const ctaButton = isModerator
+          ? `<button type="button" onclick="openAddPlayerQuickAction()" class="px-5 py-2.5 rounded-2xl text-xs sm:text-sm font-extrabold text-white bg-gradient-to-r from-teal-600 to-purple-600 hover:brightness-110 shadow-md cursor-pointer">+ İlk Oyuncuyu Ekle</button>`
+          : `<button type="button" onclick="handleAuthButtonClick()" class="px-5 py-2.5 rounded-2xl text-xs sm:text-sm font-extrabold text-white bg-slate-900 hover:bg-purple-700 shadow-md cursor-pointer">🔐 Moderatör Girişi Yap</button>`;
 
-      tbody.innerHTML = standings.map((row, index) => {
-        const rank = index + 1;
-        let rankBadge = `<span class="inline-flex items-center justify-center w-7 h-7 rounded-xl text-xs font-extrabold text-slate-600 bg-slate-200/65">${rank}</span>`;
-        let rowTint = 'hover:bg-white/75';
-
-        if (rank === 1 && row.played > 0) {
-          rankBadge = `<span class="inline-flex items-center justify-center w-7 h-7 rounded-xl text-xs font-extrabold text-amber-950 bg-gradient-to-br from-amber-300 to-yellow-400 shadow-xs">1</span>`;
-          rowTint = 'bg-amber-400/5 hover:bg-amber-400/15';
-        } else if (rank === 2 && row.played > 0) {
-          rankBadge = `<span class="inline-flex items-center justify-center w-7 h-7 rounded-xl text-xs font-extrabold text-slate-800 bg-gradient-to-br from-slate-200 to-slate-300 shadow-xs">2</span>`;
-        } else if (rank === 3 && row.played > 0) {
-          rankBadge = `<span class="inline-flex items-center justify-center w-7 h-7 rounded-xl text-xs font-extrabold text-orange-950 bg-gradient-to-br from-orange-200 to-amber-300 shadow-xs">3</span>`;
-        }
-
-        const badges = [];
-        if (row.id === leaderId) {
-          badges.push(`<span class="inline-flex items-center gap-0.5 px-2 py-0.5 rounded-lg text-[10px] font-extrabold bg-purple-500/15 text-purple-800 border border-purple-300/50">👑 Lider</span>`);
-        }
-        if (row.id === topAttackId) {
-          badges.push(`<span class="inline-flex items-center gap-0.5 px-2 py-0.5 rounded-lg text-[10px] font-extrabold bg-orange-500/15 text-orange-800 border border-orange-300/50">🔥 Gol Makinesi</span>`);
-        }
-        if (row.id === bestDefenseId) {
-          badges.push(`<span class="inline-flex items-center gap-0.5 px-2 py-0.5 rounded-lg text-[10px] font-extrabold bg-teal-500/15 text-teal-900 border border-teal-300/50">🛡️ Çelik Duvar</span>`);
-        }
-        if (row.id === butcherId) {
-          badges.push(`<span class="inline-flex items-center gap-0.5 px-2 py-0.5 rounded-lg text-[10px] font-extrabold bg-rose-500/15 text-rose-800 border border-rose-300/50">🟥 Kasap</span>`);
-        }
-
-        const gdText = row.gd > 0 ? `+${row.gd}` : `${row.gd}`;
-        const gdColor = row.gd > 0 ? 'text-teal-700' : row.gd < 0 ? 'text-rose-600' : 'text-slate-600';
-
-        const formPills = row.form.length
-          ? row.form.map(res => {
-              if (res === 'G') return `<span class="w-5 h-5 rounded-md bg-emerald-500 text-white text-[10px] font-extrabold inline-flex items-center justify-center" title="Galibiyet">G</span>`;
-              if (res === 'B') return `<span class="w-5 h-5 rounded-md bg-amber-400 text-slate-900 text-[10px] font-extrabold inline-flex items-center justify-center" title="Beraberlik">B</span>`;
-              return `<span class="w-5 h-5 rounded-md bg-rose-500 text-white text-[10px] font-extrabold inline-flex items-center justify-center" title="Mağlubiyet">M</span>`;
-            }).join('')
-          : `<span class="text-xs text-slate-400">-</span>`;
-
-        const clubPill = row.club
-          ? `<span class="text-[11px] font-semibold text-slate-500">(${escapeHTML(row.club)})</span>`
-          : '';
-
-        return `
-          <tr onclick="openPlayerProfileModal('${row.id}')" class="${rowTint} transition-colors cursor-pointer group">
-            <td class="py-3.5 pl-5 pr-2 text-center">${rankBadge}</td>
-            <td class="py-3.5 px-3">
-              <div class="flex flex-wrap items-center gap-2">
-                <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-teal-400/25 via-sky-400/25 to-purple-400/25 border border-white flex items-center justify-center text-xs font-extrabold text-slate-900 shrink-0 group-hover:scale-105 transition-transform">
-                  ${escapeHTML(row.name.charAt(0).toUpperCase())}
-                </div>
-                <div>
-                  <div class="flex flex-wrap items-center gap-1.5">
-                    <span class="font-extrabold text-slate-900 text-sm group-hover:text-purple-700 transition-colors">${escapeHTML(row.name)}</span>
-                    ${clubPill}
-                  </div>
-                  ${badges.length ? `<div class="flex flex-wrap items-center gap-1 mt-0.5">${badges.join('')}</div>` : ''}
-                </div>
+        tbody.innerHTML = `
+          <tr>
+            <td colspan="11" class="py-12 px-5 text-center">
+              <div class="max-w-md mx-auto space-y-2.5">
+                <div class="text-4xl">🏆</div>
+                <h3 class="text-base sm:text-lg font-extrabold text-slate-900">Lig Henüz Başlamadı</h3>
+                <p class="text-xs sm:text-sm text-slate-600">
+                  Şu anda kayıtlı oyuncu veya oynanmış maç bulunmuyor. Moderatör girişi yaparak arkadaşlarını lige ekleyebilir ve maç skorlarını girmeye başlayabilirsin.
+                </p>
+                <div class="pt-2">${ctaButton}</div>
               </div>
-            </td>
-            <td class="py-3.5 px-2 text-center font-semibold text-slate-700">${row.played}</td>
-            <td class="py-3.5 px-2 text-center font-bold text-emerald-700">${row.won}</td>
-            <td class="py-3.5 px-2 text-center font-bold text-amber-700">${row.drawn}</td>
-            <td class="py-3.5 px-2 text-center font-bold text-rose-700">${row.lost}</td>
-            <td class="py-3.5 px-2 text-center font-semibold text-slate-700">${row.gf}</td>
-            <td class="py-3.5 px-2 text-center font-semibold text-slate-700">${row.ga}</td>
-            <td class="py-3.5 px-2 text-center font-extrabold ${gdColor}">${gdText}</td>
-            <td class="py-3.5 px-3 text-center bg-purple-500/5">
-              <span class="inline-flex items-center justify-center min-w-[32px] px-2.5 py-1 rounded-xl bg-slate-900 text-white font-outfit font-bold text-sm shadow-2xs">
-                ${row.points}
-              </span>
-            </td>
-            <td class="py-3.5 pl-2 pr-5 hidden md:table-cell">
-              <div class="flex items-center justify-center gap-1">${formPills}</div>
             </td>
           </tr>
         `;
-      }).join('');
+      } else {
+        tbody.innerHTML = standings.map((row, index) => {
+          const rank = index + 1;
+          let rankBadge = `<span class="inline-flex items-center justify-center w-7 h-7 rounded-xl text-xs font-extrabold text-slate-600 bg-slate-200/65">${rank}</span>`;
+          let rowTint = 'hover:bg-white/75';
+
+          if (rank === 1 && row.played > 0) {
+            rankBadge = `<span class="inline-flex items-center justify-center w-7 h-7 rounded-xl text-xs font-extrabold text-amber-950 bg-gradient-to-br from-amber-300 to-yellow-400 shadow-xs">1</span>`;
+            rowTint = 'bg-amber-400/5 hover:bg-amber-400/15';
+          } else if (rank === 2 && row.played > 0) {
+            rankBadge = `<span class="inline-flex items-center justify-center w-7 h-7 rounded-xl text-xs font-extrabold text-slate-800 bg-gradient-to-br from-slate-200 to-slate-300 shadow-xs">2</span>`;
+          } else if (rank === 3 && row.played > 0) {
+            rankBadge = `<span class="inline-flex items-center justify-center w-7 h-7 rounded-xl text-xs font-extrabold text-orange-950 bg-gradient-to-br from-orange-200 to-amber-300 shadow-xs">3</span>`;
+          }
+
+          const badges = [];
+          if (row.id === leaderId) {
+            badges.push(`<span class="inline-flex items-center gap-0.5 px-2 py-0.5 rounded-lg text-[10px] font-extrabold bg-purple-500/15 text-purple-800 border border-purple-300/50">👑 Lider</span>`);
+          }
+          if (row.id === topAttackId) {
+            badges.push(`<span class="inline-flex items-center gap-0.5 px-2 py-0.5 rounded-lg text-[10px] font-extrabold bg-orange-500/15 text-orange-800 border border-orange-300/50">🔥 Gol Makinesi</span>`);
+          }
+          if (row.id === bestDefenseId) {
+            badges.push(`<span class="inline-flex items-center gap-0.5 px-2 py-0.5 rounded-lg text-[10px] font-extrabold bg-teal-500/15 text-teal-900 border border-teal-300/50">🛡️ Çelik Duvar</span>`);
+          }
+          if (row.id === butcherId) {
+            badges.push(`<span class="inline-flex items-center gap-0.5 px-2 py-0.5 rounded-lg text-[10px] font-extrabold bg-rose-500/15 text-rose-800 border border-rose-300/50">🟥 Kasap</span>`);
+          }
+
+          const gdText = row.gd > 0 ? `+${row.gd}` : `${row.gd}`;
+          const gdColor = row.gd > 0 ? 'text-teal-700' : row.gd < 0 ? 'text-rose-600' : 'text-slate-600';
+
+          const formPills = row.form.length
+            ? row.form.map(res => {
+                if (res === 'G') return `<span class="w-5 h-5 rounded-md bg-emerald-500 text-white text-[10px] font-extrabold inline-flex items-center justify-center" title="Galibiyet">G</span>`;
+                if (res === 'B') return `<span class="w-5 h-5 rounded-md bg-amber-400 text-slate-900 text-[10px] font-extrabold inline-flex items-center justify-center" title="Beraberlik">B</span>`;
+                return `<span class="w-5 h-5 rounded-md bg-rose-500 text-white text-[10px] font-extrabold inline-flex items-center justify-center" title="Mağlubiyet">M</span>`;
+              }).join('')
+            : `<span class="text-xs text-slate-400">-</span>`;
+
+          const clubPill = row.club
+            ? `<span class="text-[11px] font-semibold text-slate-500">(${escapeHTML(row.club)})</span>`
+            : '';
+
+          return `
+            <tr onclick="openPlayerProfileModal('${row.id}')" class="${rowTint} transition-colors cursor-pointer group">
+              <td class="py-3.5 pl-5 pr-2 text-center">${rankBadge}</td>
+              <td class="py-3.5 px-3">
+                <div class="flex flex-wrap items-center gap-2">
+                  <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-teal-400/25 via-sky-400/25 to-purple-400/25 border border-white flex items-center justify-center text-xs font-extrabold text-slate-900 shrink-0 group-hover:scale-105 transition-transform">
+                    ${escapeHTML(row.name.charAt(0).toUpperCase())}
+                  </div>
+                  <div>
+                    <div class="flex flex-wrap items-center gap-1.5">
+                      <span class="font-extrabold text-slate-900 text-sm group-hover:text-purple-700 transition-colors">${escapeHTML(row.name)}</span>
+                      ${clubPill}
+                    </div>
+                    ${badges.length ? `<div class="flex flex-wrap items-center gap-1 mt-0.5">${badges.join('')}</div>` : ''}
+                  </div>
+                </div>
+              </td>
+              <td class="py-3.5 px-2 text-center font-semibold text-slate-700">${row.played}</td>
+              <td class="py-3.5 px-2 text-center font-bold text-emerald-700">${row.won}</td>
+              <td class="py-3.5 px-2 text-center font-bold text-amber-700">${row.drawn}</td>
+              <td class="py-3.5 px-2 text-center font-bold text-rose-700">${row.lost}</td>
+              <td class="py-3.5 px-2 text-center font-semibold text-slate-700">${row.gf}</td>
+              <td class="py-3.5 px-2 text-center font-semibold text-slate-700">${row.ga}</td>
+              <td class="py-3.5 px-2 text-center font-extrabold ${gdColor}">${gdText}</td>
+              <td class="py-3.5 px-3 text-center bg-purple-500/5">
+                <span class="inline-flex items-center justify-center min-w-[32px] px-2.5 py-1 rounded-xl bg-slate-900 text-white font-outfit font-bold text-sm shadow-2xs">
+                  ${row.points}
+                </span>
+              </td>
+              <td class="py-3.5 pl-2 pr-5 hidden md:table-cell">
+                <div class="flex items-center justify-center gap-1">${formPills}</div>
+              </td>
+            </tr>
+          `;
+        }).join('');
+      }
 
       // Recent Matches Strip (Last 2)
       const recentPreview = document.getElementById('recent-matches-preview');
       const recentTwo = [...leagueData.matches].reverse().slice(0, 2);
       recentPreview.innerHTML = recentTwo.length
         ? recentTwo.map(m => buildPlayedMatchCardHTML(m)).join('')
-        : `<div class="md:col-span-2 glass-panel rounded-3xl p-8 text-center text-sm text-slate-500">Henüz maç oynanmadı.</div>`;
+        : `<div class="md:col-span-2 glass-panel rounded-3xl p-8 text-center text-xs sm:text-sm font-medium text-slate-500">Henüz oynanmış maç bulunmuyor.</div>`;
     }
 
     function openHighlightPlayerProfile(category) {
@@ -1872,6 +2205,10 @@
 
     function copyStandingsToClipboard() {
       const { standings } = calculateLeagueMetrics();
+      if (!standings.length) {
+        showToast('Kopyalanacak puan durumu verisi henüz yok.', 'info');
+        return;
+      }
       const lines = [
         `🏆 *LİGİPES - CANLI PUAN DURUMU* 🏆`,
         `────────────────────`
@@ -1887,7 +2224,7 @@
     }
 
     // =========================================================
-    // PLAYER PROFILE MODAL (OYUNCU PROFİL KARTI)
+    // PLAYER PROFILE MODAL
     // =========================================================
     function openPlayerProfileModal(playerId) {
       const { standings, leaderId, topAttackId, bestDefenseId, butcherId } = calculateLeagueMetrics();
@@ -1906,7 +2243,6 @@
         clubTag.classList.add('hidden');
       }
 
-      // Dynamic Badges
       const badges = [];
       if (playerStats.id === leaderId) {
         badges.push(`<span class="px-2.5 py-0.5 rounded-full text-xs font-extrabold bg-purple-500/30 border border-purple-300/40 text-purple-100">👑 Lig Lideri</span>`);
@@ -1922,7 +2258,7 @@
       }
       document.getElementById('profile-badges-row').innerHTML = badges.length
         ? badges.join('')
-        : `<span class="text-xs text-slate-300">Aktif Lig Oyuncusu</span>`;
+        : `<span class="text-xs text-slate-300">Lig Oyuncusu</span>`;
 
       document.getElementById('profile-win-rate').textContent = `%${playerStats.winRate}`;
       document.getElementById('profile-goal-avg').textContent = playerStats.goalAvg;
@@ -1939,7 +2275,6 @@
         <span>Kartlar: 🟨 ${playerStats.yellowCards} 🟥 ${playerStats.redCards}</span>
       `;
 
-      // Player Match History
       const pMatches = [...leagueData.matches]
         .filter(m => m.homeId === playerId || m.awayId === playerId)
         .reverse();
@@ -2073,7 +2408,7 @@
       const playedGrid = document.getElementById('played-matches-grid');
       playedGrid.innerHTML = playedList.length
         ? playedList.map(m => buildPlayedMatchCardHTML(m)).join('')
-        : `<div class="md:col-span-2 glass-panel rounded-3xl p-8 text-center text-sm font-medium text-slate-500">Seçilen kriterde oynanmış maç bulunmuyor.</div>`;
+        : `<div class="md:col-span-2 glass-panel rounded-3xl p-8 text-center text-xs sm:text-sm font-medium text-slate-500">Henüz tamamlanmış maç kaydı bulunmuyor.</div>`;
 
       // Render Scheduled Fixtures
       const fixturesGrid = document.getElementById('scheduled-fixtures-grid');
@@ -2136,7 +2471,6 @@
       }).join('');
     }
 
-    // Round-Robin Fixture Generator
     function generateRoundRobinFixtures(rounds = 1) {
       if (!isModerator) return;
       const players = [...leagueData.players];
@@ -2224,7 +2558,14 @@
     function populateH2HSelects() {
       const selA = document.getElementById('h2h-player-a');
       const selB = document.getElementById('h2h-player-b');
-      if (!selA || !selB) return;
+      const bar = document.getElementById('h2h-selector-bar');
+      if (!selA || !selB || !bar) return;
+
+      if (leagueData.players.length < 2) {
+        bar.classList.add('hidden');
+        return;
+      }
+      bar.classList.remove('hidden');
 
       const prevA = selA.value;
       const prevB = selB.value;
@@ -2243,15 +2584,21 @@
 
     function renderH2HSection() {
       const container = document.getElementById('h2h-results-container');
-      const idA = document.getElementById('h2h-player-a')?.value;
-      const idB = document.getElementById('h2h-player-b')?.value;
-
-      if (!idA || !idB || leagueData.players.length < 2) {
-        container.innerHTML = `<div class="p-8 text-center text-sm text-slate-500">Karşılaştırma için en az 2 oyuncu gereklidir.</div>`;
+      if (leagueData.players.length < 2) {
+        container.innerHTML = `
+          <div class="p-10 rounded-3xl bg-white/65 border border-white text-center space-y-2">
+            <div class="text-4xl">⚔️</div>
+            <h3 class="text-base font-extrabold text-slate-900">Karşılaştırma İçin En Az 2 Oyuncu Gerekli</h3>
+            <p class="text-xs sm:text-sm text-slate-600">Lige en az 2 oyuncu eklendiğinde burada kafa kafaya rekabet analizini inceleyebilirsiniz.</p>
+          </div>
+        `;
         return;
       }
 
-      if (idA === idB) {
+      const idA = document.getElementById('h2h-player-a')?.value;
+      const idB = document.getElementById('h2h-player-b')?.value;
+
+      if (!idA || !idB || idA === idB) {
         container.innerHTML = `<div class="p-8 rounded-2xl bg-amber-500/10 border border-amber-300/60 text-center text-sm font-bold text-amber-900">Lütfen karşılaştırmak için iki farklı oyuncu seçin!</div>`;
         return;
       }
@@ -2386,7 +2733,6 @@
     function renderLeadersAndRecords(metrics) {
       const { topScorers, topAssisters, topMvps, biggestWin, highestScoring, mostShotsMatch } = calculateLeaderboardsAndRecords();
 
-      // 1. League Records Cards
       const recordsGrid = document.getElementById('league-records-grid');
       const recordItems = [
         {
@@ -2436,7 +2782,6 @@
         `;
       }).join('');
 
-      // 2. Gol Krallığı
       const goalsBox = document.getElementById('leaderboard-goals');
       goalsBox.innerHTML = topScorers.length
         ? topScorers.slice(0, 7).map((item, i) => `
@@ -2453,7 +2798,6 @@
           `).join('')
         : `<div class="py-10 text-center text-xs text-slate-500">Henüz golcü kaydı girilmedi.</div>`;
 
-      // 3. Asist Krallığı
       const assistsBox = document.getElementById('leaderboard-assists');
       assistsBox.innerHTML = topAssisters.length
         ? topAssisters.slice(0, 7).map((item, i) => `
@@ -2470,7 +2814,6 @@
           `).join('')
         : `<div class="py-10 text-center text-xs text-slate-500">Henüz asist kaydı girilmedi.</div>`;
 
-      // 4. Maçın Adamı (MVP) Liderliği
       const mvpBox = document.getElementById('leaderboard-mvp');
       mvpBox.innerHTML = topMvps.length
         ? topMvps.slice(0, 7).map((item, i) => `
@@ -2487,7 +2830,6 @@
           `).join('')
         : `<div class="py-10 text-center text-xs text-slate-500">Henüz MVP ödülü girilmedi.</div>`;
 
-      // 5. Kart Raporu
       const cardsBox = document.getElementById('leaderboard-cards');
       const cardRankings = [...metrics.standings]
         .filter(p => p.played > 0)
@@ -2540,7 +2882,6 @@
       document.getElementById('detail-home-score').textContent = hg;
       document.getElementById('detail-away-score').textContent = ag;
 
-      // MVP Banner
       const mvpBanner = document.getElementById('detail-mvp-banner');
       if (match.mvp && match.mvp.name && match.mvp.name.trim()) {
         const mvpOwner = match.mvp.side === 'away' ? awayP.name : homeP.name;
@@ -2550,7 +2891,6 @@
         mvpBanner.classList.add('hidden');
       }
 
-      // Moderator Edit/Delete Controls
       const editBtn = document.getElementById('detail-edit-btn');
       const delBtn = document.getElementById('detail-delete-btn');
       delBtn.dataset.armed = 'false';
@@ -2566,7 +2906,6 @@
         delBtn.classList.add('hidden');
       }
 
-      // Scorers & Assists
       const scorers = Array.isArray(match.scorers) ? [...match.scorers].sort((a, b) => a.minute - b.minute) : [];
       const homeGoals = scorers.filter(s => s.team === 'home');
       const awayGoals = scorers.filter(s => s.team === 'away');
@@ -2605,7 +2944,6 @@
           }).join('')
         : `<span class="text-xs text-slate-400 italic">Gol kaydı yok</span>`;
 
-      // 7 Stat Comparison Bars
       const st = match.stats || {};
       const rows = [
         { label: 'Topla Oynama (%)', vals: st.possession || [50, 50], isPct: true, icon: '' },
@@ -2718,7 +3056,8 @@
     function openMatchFormModal(options = {}) {
       if (!isModerator) return;
       if (leagueData.players.length < 2) {
-        showToast('Maç eklemek için ligde en az 2 oyuncu bulunmalıdır.', 'error');
+        showToast('Maç eklemek için önce Yönetim sekmesinden en az 2 oyuncu eklemelisiniz.', 'error');
+        openAddPlayerQuickAction();
         return;
       }
 
@@ -2792,16 +3131,16 @@
 
         document.getElementById('form-poss-home').value = 50;
         document.getElementById('form-poss-away').value = 50;
-        document.getElementById('form-shots-home').value = 8;
-        document.getElementById('form-shots-away').value = 6;
-        document.getElementById('form-sot-home').value = 5;
-        document.getElementById('form-sot-away').value = 3;
-        document.getElementById('form-passes-home').value = 120;
-        document.getElementById('form-passes-away').value = 110;
-        document.getElementById('form-fouls-home').value = 2;
-        document.getElementById('form-fouls-away').value = 3;
+        document.getElementById('form-shots-home').value = 0;
+        document.getElementById('form-shots-away').value = 0;
+        document.getElementById('form-sot-home').value = 0;
+        document.getElementById('form-sot-away').value = 0;
+        document.getElementById('form-passes-home').value = 0;
+        document.getElementById('form-passes-away').value = 0;
+        document.getElementById('form-fouls-home').value = 0;
+        document.getElementById('form-fouls-away').value = 0;
         document.getElementById('form-yc-home').value = 0;
-        document.getElementById('form-yc-away').value = 1;
+        document.getElementById('form-yc-away').value = 0;
         document.getElementById('form-rc-home').value = 0;
         document.getElementById('form-rc-away').value = 0;
 
@@ -3010,7 +3349,7 @@
         closeModal('match-form-modal');
         renderAll();
         triggerConfetti();
-        showToast('Maç sonucu kaydedildi ve puan tablosu güncellendi! 🎉', 'success');
+        showToast('Maç sonucu kaydedildi! Arkadaşlarının görmesi için "Güncel Linki Paylaş" butonunu kullanabilirsin.', 'success');
       }
     }
 
@@ -3056,6 +3395,12 @@
     function renderAdminPlayers() {
       const grid = document.getElementById('admin-players-grid');
       if (!grid) return;
+
+      if (!leagueData.players.length) {
+        grid.innerHTML = `<div class="sm:col-span-2 lg:col-span-3 p-5 rounded-2xl bg-white/70 border border-white text-center text-xs text-slate-500">Henüz oyuncu eklenmedi. Yukarıdaki formdan arkadaşlarını ekleyebilirsin.</div>`;
+        return;
+      }
+
       grid.innerHTML = leagueData.players.map(p => {
         const count = leagueData.matches.filter(m => m.homeId === p.id || m.awayId === p.id).length;
         return `
@@ -3111,14 +3456,6 @@
       e.target.value = '';
     }
 
-    function resetToDemoData() {
-      if (!isModerator) return;
-      leagueData = getStarterDemoData();
-      saveLeagueData();
-      renderAll();
-      showToast('Örnek lig verileri geri yüklendi!', 'success');
-    }
-
     function handleResetSeason() {
       if (!isModerator) return;
       const btn = document.getElementById('admin-reset-season-btn');
@@ -3160,16 +3497,28 @@
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
         closeModal('login-modal');
+        closeModal('cloud-sync-modal');
         closeModal('player-profile-modal');
         closeModal('match-detail-modal');
         closeModal('match-form-modal');
       }
     });
 
+    window.addEventListener('hashchange', () => {
+      processIncomingUrlHash(false);
+    });
+
     // Boot Application
-    window.addEventListener('DOMContentLoaded', () => {
+    window.addEventListener('DOMContentLoaded', async () => {
       updateAuthUI();
+      updateCloudStatusUI(cloudDbUrl ? 'connected' : 'idle');
       renderAll();
+
+      const handledHash = await processIncomingUrlHash(true);
+      if (!handledHash && cloudDbUrl) {
+        await pullStateFromCloud(true);
+        startCloudBackgroundPolling();
+      }
     });
   </script>
 </body>
